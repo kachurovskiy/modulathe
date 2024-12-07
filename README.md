@@ -17,6 +17,8 @@ Modular digital open-source DIY desktop lathe for processing metal, wooden and p
 - Integrated spindle lock and magnet bed covers
 - Manual operation and CNC with or without PC
 
+[See modulathe v1 assembly manual](v1/README.md)
+
 ![image](https://github.com/user-attachments/assets/651034cf-7c9e-492d-bcfd-ec5f22770f54)
 
 ## Core ideas
