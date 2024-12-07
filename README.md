@@ -17,7 +17,7 @@ Modular digital open-source DIY desktop lathe for processing metal, wooden and p
 - Integrated magnet bed covers
 - Manual operation and CNC with or without PC
 
-![image](https://github.com/user-attachments/assets/9eaca786-2de2-4d67-b27e-8377c563dbfe)
+![image](https://github.com/user-attachments/assets/651034cf-7c9e-492d-bcfd-ec5f22770f54)
 
 ## Core ideas
 
