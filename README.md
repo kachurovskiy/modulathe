@@ -4,6 +4,17 @@ This software and instructions are [provided as is](LICENSE), without warranty o
 
 Modular digital open-source DIY desktop lathe for processing metal, wooden and plastic parts.
 
+- 125mm chuck, 38mm through-hole
+- 136mm cross-slide travel
+- 70mm between cross-slide and centerline
+- 280mm maximum turning diameter
+- Any bed length - depends on ball screw and rail length
+- No backlash
+- NEMA23 motors
+- GT3 belts for quiet operation
+- Tapered roller bearings or ball bearings
+- 4 vibration dampening features
+
 ![image](https://github.com/user-attachments/assets/9eaca786-2de2-4d67-b27e-8377c563dbfe)
 
 ## Core ideas
@@ -30,7 +41,3 @@ People who's needs might not be met by this project:
 - Hot/freezing/dusty/sunny workshops
 - Need to feel the pressure feedback on the handwheels
 - Need a machine meeting local machinery regulations
-
-## Capabilities
-
-This project is a work-in-progress and not yet ready for production.
