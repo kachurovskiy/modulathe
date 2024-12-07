@@ -14,7 +14,7 @@ Modular digital open-source DIY desktop lathe for processing metal, wooden and p
 - GT3 belts for quiet operation
 - Tapered roller bearings or ball bearings
 - 4 vibration dampening features
-- Integrated magnet bed covers
+- Integrated spindle lock and magnet bed covers
 - Manual operation and CNC with or without PC
 
 ![image](https://github.com/user-attachments/assets/651034cf-7c9e-492d-bcfd-ec5f22770f54)
