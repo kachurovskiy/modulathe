@@ -6,11 +6,11 @@ Decide the bed length of your future lathe. By default it's 680mm. It affects:
 
 - length of the base pipe (680mm default)
 - length of the long pair of 15mm rails (500mm default)
-- length of the long leadscrew (450mm default)
+- length of the long leadscrew (500mm default)
 
 You can increase or decrease all of the above lengths together in steps of 50mm.
 
-Any printed parts can be modified using FreeCAD 1.0, models in the [freecad](freecad) folder. Prints done with 100% infill.
+Any printed parts can be modified using FreeCAD 1.0, models in the [freecad](freecad) folder. Prints done with PETG 100% infill.
 
 ## Preparing the steel tube
 
@@ -31,22 +31,21 @@ Tube ends are closed using the printed [end caps](step/Pipe160x80Cap1.step) whic
 ## Printing the bed and headstock
 
 - [11kg PETG filament](https://www.ebay.de/itm/354057573174?var=624933263557), 109€
-- M5 threaded inserts: 27 for the headstock, 11 for each HGR20 rail (2 suggested during assembly), 16 for the bed (65 in total), 6€
+- M5 threaded inserts: 27 for the headstock, 11 for each HGR20 rail (2 needed during assembly), 16 for the bed (65 in total), 6€
 - M4 threaded inserts: 9 for each HGR15 rail (18 total), 3€
 
-Split [BaseAndHeadstock3DP.step](step/BaseAndHeadstock3DP.step) vertically between the bed and the headstock at 30.01mm. Split the remaining headstock vertically in the middle. Split the bed in 4 pieces (in half, then each piece again in half), optionally with the dovtail. Try not to split along any holes. Print with full infill.
+Split [BaseAndHeadstock3DP.step](step/BaseAndHeadstock3DP.step) vertically between the bed and the headstock at 30.01mm [using e.g. Bambu cut tool](https://wiki.bambulab.com/en/software/bambu-studio/cut-tool). Split the remaining headstock vertically in the middle, then each part again with the dovetails. Split the bed in 7-8 pieces (in half, then each piece again in half) with the dovetail. Try not to split along any holes. Print with full infill.
 
-![image](https://github.com/user-attachments/assets/daf5abc6-bad9-4634-9725-8a556d599bf4)
+![image](https://github.com/user-attachments/assets/db2ea30d-8c68-46e1-b515-57161092a6ba)
 
-Most printers build volume allows to split in just 3 parts instead of 6 but that is not recommended:
+Most printers build volume theoretically allows to split in only 4 parts but that is not recommended:
 
 - Headstock should not be printed in 1 part with the bed since we need to micro-adjust the headstock after the bed is glued
-- Headstock should not be printed as 1 part as it shrinks, pulls the magnetic bed up and starts wobbling
-- Headstock reference surfaces (back and front wall) should not be facing the build plate as it's rarely flat
+- Large parts shrink, pull the magnetic bed up and starts wobbling
 - Bed should is split into more pieces to not exceed the magnetic base force limit
-- Smaller parts mean that a failure is cheaper (e.g. tangled filament), less material is thrown away
+- Smaller parts mean that a potential failure is cheaper (e.g. tangled filament), less material is thrown away
 
-Enable adhesion brim and supports for the side rails. Without adhesion brim, the parts will warp up a lot.
+Enable adhesion brim and supports for the bed side rails. Without adhesion brim, the parts will warp more.
 
 Add support blocker to avoid unnecessary supports. Without supports for the upper lip it will print as noodles.
 
@@ -54,14 +53,17 @@ Add support blocker to avoid unnecessary supports. Without supports for the uppe
 
 Print post-processing:
 
-- Use woodworking chisel to shave off any imperfections on the rail mating surfaces
-- Remove any bulges on the edges, sand down the important surfaces for better flatness
+- Use woodworking chisel to shave off any imperfections
+- Use large flat file to remove bulges on the edges, sand down the layer lines a bit
+
+It's possible to print the bed vertically in 3 pieces and it has advantages - not needing support, less warping - but the resulting parts shrink measurably and can result in the rail holes to no longer aligning.
 
 ## Headstock glue-up
 
 - [Polished hardened 9mm steel rod, 300mm](https://www.ebay.de/itm/333791840783?var=542864083101), 10€
+- [Reamer 9mm](https://www.aliexpress.com/item/4000614485972.html), 4€
 
-Cleanup the headstock 9mm through hole that's intended for the spindle lock pin with a 9mm drill so that the polished rod slides through without getting stuck.
+Cleanup the headstock 9mm through hole that's intended for the spindle lock pin with a 9mm reamer so that the polished rod slides through without getting stuck.
 
 Roughen, degrease the headstock mating surfaces, wet with epoxy, align with the rod and try to get the most square part possible. Once epoxy hardens, excess can be cleaned up with a chisel.
 
