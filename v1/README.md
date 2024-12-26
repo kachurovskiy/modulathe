@@ -6,17 +6,15 @@ Decide the bed length of your future lathe. By default it's 680mm. It affects:
 
 - length of the base pipe (680mm default)
 - length of the long pair of 15mm rails (500mm default)
-- length of the long leadscrew (450mm default)
+- length of the long leadscrew (500mm default)
 
 You can increase or decrease all of the above lengths together in steps of 50mm.
 
-Any printed parts can be modified using FreeCAD 1.0, models in the [freecad](freecad) folder. Prints done with 100% infill.
+Any printed parts can be modified using FreeCAD 1.0, models in the [freecad](freecad) folder. Prints done with PETG 100% infill.
 
 ## Preparing the steel tube
 
 - [160x80x4mm steel tube](https://www.ebay.de/itm/132751662693?var=432062251186), 28€
-- Pre-mixed concrete 25kg, 8€
-- 2 M10 threaded rods 1m, 9€
 - Optional [4 rubber feet 38xM8x15mm](https://www.aliexpress.com/item/1005006179757754.html), 8€
 
 Tube needs to be:
@@ -33,33 +31,41 @@ Tube ends are closed using the printed [end caps](step/Pipe160x80Cap1.step) whic
 ## Printing the bed and headstock
 
 - [11kg PETG filament](https://www.ebay.de/itm/354057573174?var=624933263557), 109€
-- M5 threaded inserts: 27 for the headstock, 11 for each HGR20 rail (2 suggested during assembly), 16 for the bed (65 in total), 6€
+- M5 threaded inserts: 27 for the headstock, 11 for each HGR20 rail (2 needed during assembly), 16 for the bed (65 in total), 6€
 - M4 threaded inserts: 9 for each HGR15 rail (18 total), 3€
 
-Split [BaseAndHeadstock3DP.step](step/BaseAndHeadstock3DP.step) vertically between the bed and the headstock at 30.01mm. Split the remaining headstock vertically in the middle. Split the bed in 4 pieces (in half, then each piece again in half), optionally with the dovtail. Try not to split along any holes. Print with full infill.
+Split [BaseAndHeadstock3DP.step](step/BaseAndHeadstock3DP.step) vertically between the bed and the headstock at 30.01mm [using e.g. Bambu cut tool](https://wiki.bambulab.com/en/software/bambu-studio/cut-tool). Split the remaining headstock vertically in the middle, then each part again with the dovetails. Split the bed in 7-8 pieces (in half, then each piece again in half) with the dovetail. Try not to split along any holes. Print with full infill.
 
-![image](https://github.com/user-attachments/assets/daf5abc6-bad9-4634-9725-8a556d599bf4)
+![image](https://github.com/user-attachments/assets/db2ea30d-8c68-46e1-b515-57161092a6ba)
 
-Most printers build volume allows to split in just 3 parts instead of 6 but that is not recommended:
+Most printers build volume theoretically allows to split in only 4 parts but that is not recommended:
 
 - Headstock should not be printed in 1 part with the bed since we need to micro-adjust the headstock after the bed is glued
-- Headstock should not be printed as 1 part as it shrinks, pulls the magnetic bed up and starts wobbling
-- Headstock reference surfaces (back and front wall) should not be facing the build plate as it's rarely flat
+- Large parts shrink, pull the magnetic bed up and starts wobbling
 - Bed should is split into more pieces to not exceed the magnetic base force limit
-- Smaller parts mean that a failure is cheaper (e.g. tangled filament), less material is thrown away
+- Smaller parts mean that a potential failure is cheaper (e.g. tangled filament), less material is thrown away
+
+Enable adhesion brim and supports for the bed side rails. Without adhesion brim, the parts will warp more.
+
+Add support blocker to avoid unnecessary supports. Without supports for the upper lip it will print as noodles.
+
+![image](https://github.com/user-attachments/assets/3a48ef8b-05d3-4a32-9e71-af972e6fed56)
 
 Print post-processing:
 
-- Use woodworking chisel to shave off any imperfections on the rail mating surfaces
-- Remove any bulges on the edges, sand down the important surfaces for better flatness
+- Use woodworking chisel to shave off any imperfections
+- Use large flat file to remove bulges on the edges, sand down the layer lines a bit
+
+It's possible to print the bed vertically in 3 pieces and it has advantages - not needing support, less warping - but the resulting parts shrink measurably and can result in the rail holes to no longer aligning.
 
 ## Headstock glue-up
 
 - [Polished hardened 9mm steel rod, 300mm](https://www.ebay.de/itm/333791840783?var=542864083101), 10€
+- [Reamer 9mm](https://www.aliexpress.com/item/4000614485972.html), 4€
 
-Cleanup the headstock 9mm through hole that's intended for the spindle lock pin with a 9mm drill so that the polished rod slides through without getting stuck.
+Cleanup the headstock 9mm through hole that's intended for the spindle lock pin with a 9mm reamer so that the polished rod slides through without getting stuck.
 
-Roughen, degrease the headstock mating surfaces, wet with epoxy, align with the rod and try to get the most square part possible. Once epoxy hardens, it can be cleaned up with a chisel.
+Roughen, degrease the headstock mating surfaces, wet with epoxy, align with the rod and try to get the most square part possible. Once epoxy hardens, excess can be cleaned up with a chisel.
 
 [Z motor plate](step/BaseAndHeadstock3DP-MotorPlate.step) needs M4 inserts melted in from the flat side and glued into the headstock.
 
@@ -77,7 +83,7 @@ Fill the rectangular headstock cavity with the sand leaving space for the lid, c
 
 ## Bed glue-up
 
-- Optional 2 HGR20 600mm (only needed during the glue-up), 52€
+- Optional 2 HGR20 600mm (only needed during the glue-up or if you have plans for them), 52€
 
 Ensure all M5 through holes in the bed have the long enough threaded inserts melted in from the bottom side.
 
@@ -87,11 +93,24 @@ Cover the threaded inserts on the bottom side with small patches of tape so that
 
 Install 2 side HGR20 rails and 2 HGR15 top rails for bed alignment. The geometry of the bed must not be determined by the steel tube - instead we aim to make the bed as flat as possible and lock it in place using epoxy to fill in the cavities and tube to provide stiffness.
 
-Plastic and metal mating surfaces to be roughened with an orbital sander and degreased. Mating surfaces wetted with epoxy, bed lowered onto the tube and positioned. Do not clamp the bed to the tube.
+Plastic and metal mating surfaces to be roughened with an orbital sander and degreased. Mating surfaces wetted with epoxy, bed lowered onto the tube and positioned. Do not clamp the bed to the tube. Aim for a thin epoxy layer to minimize shrinkage.
 
 Glue will drip off the sides of the tube, protect your working surface.
 
 HGR20 rails to be removed after the epoxy sets.
+
+## Concrete and threaded rods
+
+- Pre-mixed concrete 25kg, 8€
+- 2 M10 threaded rods 1m, 9€
+
+Cut 4 threaded rods pieces each 340mm long.
+
+Drill 4 holes for threaded rods under the headstock. Use 10, 11 or 12mm drill. Print [2 pipe covers](step/Pipe160x80Cap1.step) and cap 1 end of the pipe.
+
+Prepare concrete for the volume of the pipe. Make sure to wear personal protection, cement should not be breathed in and it damages the skin quickly. Use exact amount of water per instructions on your bag, normally the mix should be dry leaving almost no marks if it falls on the floor. Excess water will harm the results.
+
+Fix the pipe vertically so that the headstock is near top. Cover all areas except the top hole. Fill and compact the concrete up to the lower threaded rod holes. Insert and align the threaded rods, fill and compact the concrete leaving 10mm empty on the top. Close with the top lid. Let it cure for several days.
 
 ## Spindle install
 
@@ -101,9 +120,9 @@ HGR20 rails to be removed after the epoxy sets.
 
 Cool the spindle, heat up the large bearing and slide it onto the spindle.
 
-Cool down the spindle with large bearing and insert it into the headstock.
+Cool the spindle with the large bearing and insert it into the headstock.
 
-Small bearing can be pushed in place using an M10 threaded rod with 2 nuts. From the face of the spindle, put the rod through a large enough object. From the back side, apply pressure to both races of the bearing using [the printed bearing pusher](step/BearingPusher45.step). Push the bearing in place by holding M10 nut on one side and tightening another M10 nut on the other side. Do not over-tighten.
+Small bearing can be pushed in place using an M10 threaded rod with 2 nuts. From the face of the spindle, put the rod through a large enough object. From the back side, apply pressure to both races of the bearing using [the printed bearing pusher](step/BearingPusher45.step). Push the bearing in place by holding M10 nut on one side and tightening another M10 nut on the other side. Do not over-tighten as excessive axial load can damage the front bearing.
 
 ## Additional anti-vibration measure
 
