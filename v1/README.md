@@ -26,6 +26,8 @@ Rubber feet connect to the tube through [2 printed cross-members](step/Pipe160Cr
 
 Tube ends are closed using the printed [end caps](step/Pipe160x80Cap1.step) which hold on friction. These caps are also used later during the concrete fill.
 
+NOTE: you can use [heavy alu profile 160x80mm](https://www.myaluprofil.de/Aluminiumprofil-160x80-Schwer-Nut-8--I-Typ-kompatibel.html?language=en) instead, it's more expensive but needs no cutting, cleaning or grinding.
+
 ## Printing the bed and headstock
 
 - [11kg PETG filament](https://www.ebay.de/itm/354057573174?var=624933263557), 109€
