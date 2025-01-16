@@ -1,6 +1,6 @@
 # modulathe v1
 
-![PXL_20241208_165959620-Photoroom](https://github.com/user-attachments/assets/90273628-7344-4fc4-a882-eb2a0de424a4)
+![image](https://github.com/user-attachments/assets/865b4746-161d-4c95-9fc8-a569a91396af)
 
 Decide the bed length of your future lathe. By default it's 680mm. It affects:
 
