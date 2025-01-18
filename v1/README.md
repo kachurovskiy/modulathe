@@ -108,6 +108,12 @@ Protect the front bearing with [4 printed supports](step/BearingSupport61-89-10m
 
 Print and install [spindle pulley](step/SpindleGear60GT3.step) with a 4x4x20mm steel key, tighten with light pressure using a M45 precision nut. Do not buy cheaper non-precision nuts.
 
+## Chuck
+
+- [Sanou 125mm 3-jaw chuck](https://www.aliexpress.com/item/1005005972611963.html), 62€
+
+Very important to buy a quality SANOU chuck with ground jaws. Don't get VEVOR chucks.
+
 ## Encoder
 
 - [600 pulse 5V optical rotary encoder](https://www.aliexpress.com/item/4001142743940.html), 18€
