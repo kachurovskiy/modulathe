@@ -2,6 +2,8 @@ This software and instructions are [provided as is](LICENSE), without warranty o
 
 # modulathe
 
+![image](https://github.com/user-attachments/assets/865b4746-161d-4c95-9fc8-a569a91396af)
+
 Modular digital open-source DIY desktop lathe for processing metal, wooden and plastic parts.
 
 - 125mm chuck, MT5 spindle with 38mm through-hole
@@ -18,8 +20,6 @@ Modular digital open-source DIY desktop lathe for processing metal, wooden and p
 - Manual operation and CNC with or without PC
 
 [See modulathe v1 assembly manual](v1/README.md)
-
-![image](https://github.com/user-attachments/assets/651034cf-7c9e-492d-bcfd-ec5f22770f54)
 
 ## Core ideas
 

@@ -1,6 +1,6 @@
 # modulathe v1
 
-![PXL_20241208_165959620-Photoroom](https://github.com/user-attachments/assets/90273628-7344-4fc4-a882-eb2a0de424a4)
+![image](https://github.com/user-attachments/assets/865b4746-161d-4c95-9fc8-a569a91396af)
 
 Decide the bed length of your future lathe. By default it's 680mm. It affects:
 
@@ -102,14 +102,16 @@ Fix the pipe vertically so that the headstock is near top. Fill and compact the 
 ## Spindle install
 
 - [Spindle MT5 125mm 38mm hole Type B](https://www.aliexpress.com/item/1005004521050803.html), 108€
-- [6210-2RS bearings](https://www.amazon.de/dp/B071YY8Q8C), 26€
-- [6209-2RS bearings](https://www.amazon.de/dp/B071YY92JB), 25€
+- [6210-2RS bearings](https://motionparts.de/products/6210-2rs1-skf), 14€
+- [6209-2RS bearings](https://motionparts.de/products/6209-2rs1-skf), 11€
 
 Cool the spindle, heat up the large bearing and slide it onto the spindle.
 
-Cool the spindle with the large bearing and insert it into the headstock.
+Protect the front bearing with [4 printed supports](step/BearingSupport61-89-10mm.step) held in place with tape. Small bearing can be pushed in place using an M10 threaded rod with 2 nuts. From the face of the spindle, put the rod through a large enough object. From the back side, apply pressure to both races of the bearing using [the printed bearing pusher](step/BearingPusher45.step). Push the bearing in place by holding M10 nut on one side and tightening another M10 nut on the other side. Do not over-tighten.
 
-Small bearing can be pushed in place using an M10 threaded rod with 2 nuts. From the face of the spindle, put the rod through a large enough object. From the back side, apply pressure to both races of the bearing using [the printed bearing pusher](step/BearingPusher45.step). Push the bearing in place by holding M10 nut on one side and tightening another M10 nut on the other side. Do not over-tighten as excessive axial load can damage the front bearing.
+## Further links and instructions
+
+To be added in the coming weeks. In summary it's HGR15 rails, 1204 ball screws from AliExpress in C5 quality. Cross-slide plate ordered from JLCPCB with threads done by them according to the PDF in the `step` package. Ball screw mounting blocks 3D printed with axial bearings. All other models are already shared.
 
 ## Additional anti-vibration measure
 
