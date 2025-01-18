@@ -12,6 +12,10 @@ You can increase or decrease all of the above lengths together in steps of 50mm.
 
 Any printed parts can be modified using FreeCAD 1.0, models in the [freecad](freecad) folder. Prints done with PETG 100% infill.
 
+M5 (10mm 100 pcs.) and M4 (8mm 50 pcs.) threaded inserts would be used, available for 10€ on AliExpress.
+
+M5 and M4 cylinder head bolts of various lengths are needed, get pack of 50 of each length - 12mm, 16mm, 20mm, 25mm, 30mm, 35mm.
+
 ## Preparing the steel tube
 
 - [160x80x4mm steel tube](https://www.ebay.de/itm/132751662693?var=432062251186), 28€
@@ -56,9 +60,7 @@ Cleanup the headstock 9mm through hole that's intended for the spindle lock pin 
 
 ## Headstock preparation
 
-- M5 threaded inserts: 27, 6€
-
-[Z motor plate](step/BaseAndHeadstock3DP-MotorPlate.step) needs four M4 inserts melted in from the flat side and glued into the headstock.
+[Z motor plate](step/BaseAndHeadstock3DP-MotorPlate.step) needs four M4 inserts melted in.
 
 Wash 1 liter of sand in a bucket by filling with water, agitating and then draining the water off the side. Repeat until the water is clean, approx. 5 times.
 
@@ -68,15 +70,9 @@ Fill the rectangular headstock cavity with the sand leaving space for the lid, c
 
 [Print the lid](step/BaseAndHeadstock3DP-SandHoleCover.step), hammer it in flush through a large flat block so that it doesn't go in too deep.
 
-Alternatively, mix some epoxy, wait 1hr for it to get the consistency of a sour cream and place on top of the sand forming a seal. Free sand is supposedly better at absorbing vibtations than epoxy-bound sand.
-
 ## Bed preparation
 
-- M5 threaded inserts: approx. 50, 6€
-- M4 threaded inserts: approx. 50, 4€
-- M4 8mm grub screws: 24, 3€
-
-Melt in threaded inserts from the bottom and the sides - not from the top. Ensure they are flush or below the surface.
+Melt in threaded inserts from the bottom and the sides - not from the top. Ensure they are flush or below the surface. M4 inserts on the bottom are optional, they are intended to accept grub screws that can be used to level the bed while glueing it to the steel tube.
 
 Glue bed from the pieces together 1 connection at the time aiming for the top side surface flatness. Bottom surface of the resulting part can be uneven, it doesn't matter.
 
@@ -97,24 +93,57 @@ Mark 4 holes for threaded rods by placing the bed in it's intended position on t
 
 Prepare concrete for the volume of the pipe. Make sure to wear personal protection, cement should not be breathed in and it damages the skin within minutes. Use exact amount of water per instructions on your bag, normally the mix should be dry leaving almost no marks if it falls on the floor. Excess water will weaken the concrete.
 
-Fix the pipe vertically so that the headstock is near top. Fill and compact the concrete up to the lower threaded rod holes. Insert and align the threaded rods, fill and compact the concrete leaving 10mm empty on the top. Close with the top lid. Let it cure for several days.
+Fix the pipe vertically so that the headstock is near top. Fill and compact the concrete in layers up to the lower threaded rod holes. Insert and align the threaded rods, fill and compact the concrete leaving 10mm empty on the top. Close with the top lid. Let it cure for several days.
 
 ## Spindle install
 
 - [Spindle MT5 125mm 38mm hole Type B](https://www.aliexpress.com/item/1005004521050803.html), 108€
 - [6210-2RS bearings](https://motionparts.de/products/6210-2rs1-skf), 14€
 - [6209-2RS bearings](https://motionparts.de/products/6209-2rs1-skf), 11€
+- [M45x1.5mm precision nut](https://www.aliexpress.com/item/1005004257672565.html), 15€
 
 Cool the spindle, heat up the large bearing and slide it onto the spindle.
 
 Protect the front bearing with [4 printed supports](step/BearingSupport61-89-10mm.step) held in place with tape. Small bearing can be pushed in place using an M10 threaded rod with 2 nuts. From the face of the spindle, put the rod through a large enough object. From the back side, apply pressure to both races of the bearing using [the printed bearing pusher](step/BearingPusher45.step). Push the bearing in place by holding M10 nut on one side and tightening another M10 nut on the other side. Do not over-tighten.
 
+Print and install [spindle pulley](step/SpindleGear60GT3.step) with a 4x4x20mm steel key, tighten with light pressure using a M45 precision nut. Do not buy cheaper non-precision nuts.
+
+## Encoder
+
+- [600 pulse 5V optical rotary encoder](https://www.aliexpress.com/item/4001142743940.html), 18€
+- [Belt GT3 267-3MGT-6](https://www.z24.de/a/40021-zahnriemen-3m-gt-gt3?breite=6&laenge=267&quantity=1), 12€
+
+Print [encoder mount](step/EncoderMount.step) and [encoder gear](step/EncoderGear30GT3.step), install and lightly tighten the belt. You would need 3 pcs. M3 flat head bolts to connect encoder with the mount.
+
+## Motor
+
+- [1100W brushless sero motor](https://www.aliexpress.com/item/1005005662497179.html), 140€
+- [Belt GT3 384-3MGT-9](https://www.z24.de/a/40021-zahnriemen-3m-gt-gt3?breite=9&laenge=384&quantity=1), 15€
+
+Looks like the shape of motor controller board has changed since I bought, check if the new box fits [FreeCAD model](freecad/Motor1100Bracket.FCStd). [Pulley](step/MotorPulley30GT3.step) is 3D printed.
+
+## Axis motors
+
+- [STEPPERONLINE 3Nm NEMA23 closed loop](https://www.ebay.de/itm/314811928812), 2 pcs., 166€
+
+There are cheaper motor options but these are reliable and quiet motors I prefer to use. Print [Z axis motor bracket](step/BaseAndHeadstock3DP-MotorPlate.step), [X axis motor bracket](step/HM10-57-3DP.step).
+
+## Ball screws
+
+- [SFU1204 C5 ball screw](https://www.aliexpress.com/item/1005001335646337.html) of 300mm and 500mm length, 55€
+- [30mm tall nut housing, 24mm hole](https://www.aliexpress.com/item/1005006822739785.html) 2 pcs., 7€
+
+It's critically important to get C5 quality, branded ball screws and nuts. C7 or unrated ball screws will much decrease the lathe characteristics due to 2-3x larger play and deflection.
+
+One of the nuts needs holes for M5 bolts drilled and counterbored, [see the model](freecad/BallNutMount2M5-3DP.FCStd). Alternatively you can just 3D print it.
+
+## Ball screw mounts
+
+- 4 pcs. [F10-18M axial bearings](https://www.aliexpress.com/item/1005007163457959.html)
+- 2 pcs. 608-2RS bearings for tail ball screw mounts
+
+Print Z axis [ball screw main mount](step/BK10Axial.step) and [tail mount](step/BF10.step). Main mount and X axis motor bracket each take 2 axial bearings. It's okay if it's hard to turn the ball screws initially, after a few days the high points on plastic yield a bit and they start to turn easier.
+
 ## Further links and instructions
 
-To be added in the coming weeks. In summary it's HGR15 rails, 1204 ball screws from AliExpress in C5 quality. Cross-slide plate ordered from JLCPCB with threads done by them according to the PDF in the `step` package. Ball screw mounting blocks 3D printed with axial bearings. All other models are already shared.
-
-## Additional anti-vibration measure
-
-- Optional [2 pads of 12.7cm Sorbothane 70 Duro](https://www.amazon.de/dp/B005JRO1KO?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1), 83€
-
-Sorbothane pads are alternative to the rubber feet and supposedly remove 95% of vibrations. I didn't test their effectiveness yet. Hard to peel them off, might not be reusable, less clearance for picking up the lathe compared to feet.
+To be added in the coming weeks. In summary it's HGR15 rails from AliExpress. Cross-slide plate ordered from JLCPCB with threads done by them according to the PDF in the `step` package. All models are already shared.
