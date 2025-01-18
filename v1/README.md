@@ -125,7 +125,6 @@ Looks like the shape of motor controller board has changed since I bought, check
 ## Axis motors
 
 - [STEPPERONLINE 3Nm NEMA23 closed loop](https://www.ebay.de/itm/314811928812), 2 pcs., 166€
-- 16x6x10mm axial bearings, 2 pcs. 
 
 There are cheaper motor options but these are reliable and quiet motors I prefer to use. Print [Z axis motor bracket](step/BaseAndHeadstock3DP-MotorPlate.step), [X axis motor bracket](step/HM10-57-3DP.step).
 
@@ -147,10 +146,4 @@ Print Z axis [ball screw main mount](step/BK10Axial.step) and [tail mount](step/
 
 ## Further links and instructions
 
-To be added in the coming weeks. In summary it's HGR15 rails, 1204 ball screws from AliExpress in C5 quality. Cross-slide plate ordered from JLCPCB with threads done by them according to the PDF in the `step` package. Ball screw mounting blocks 3D printed with axial bearings. All other models are already shared.
-
-## Additional anti-vibration measure
-
-- Optional [2 pads of 12.7cm Sorbothane 70 Duro](https://www.amazon.de/dp/B005JRO1KO?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1), 83€
-
-Sorbothane pads are alternative to the rubber feet and supposedly remove 95% of vibrations. I didn't test their effectiveness yet. Hard to peel them off, might not be reusable, less clearance for picking up the lathe compared to feet.
+To be added in the coming weeks. In summary it's HGR15 rails from AliExpress. Cross-slide plate ordered from JLCPCB with threads done by them according to the PDF in the `step` package. All models are already shared.
