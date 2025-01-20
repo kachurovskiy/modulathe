@@ -155,7 +155,7 @@ Print Z axis [ball screw main mount](step/BK10Axial.step) and [tail mount](step/
 ## Linear rails
 
 - 500mm HGR15CA, 50€
-- 300mmHGR15CC, 45€
+- 300mm HGR15CC, 45€
 
 Keep in mind that linear rails are not straight - best case they have a bow, worst case it's a spiral.
 
@@ -189,7 +189,7 @@ I've ordered several bars and the one linked above is the best, others too bent 
 
 For left-right alignment, ride an indicator on the side of the bar and find average values at the start and end. Adjust the headstock until averages are close to equal.
 
-For up-down alignment, do the same procedure on the top of the bad. Sand down the bottom of the headstock to tilr in either direction. **This might affect your centerline and require sanding the middle plate by the same amount.**
+For up-down alignment, do the same procedure on the top of the bad. Sand down the bottom of the headstock to tilt in either direction. **This might affect your centerline and require sanding the middle plate by the same amount.**
 
 It's critical to epoxy the headstock in place in good horizontal alignment. Vertical alignment can be micro-adjusted with 4 M10 nuts, just don't overtighten them. According to ChatGPT calculation the limit for each nut is 30Nm. Headstock plate needs to be epoxied too for better pressure distribution.
 
@@ -197,7 +197,7 @@ It's critical to epoxy the headstock in place in good horizontal alignment. Vert
 
 ### CNC lathe bed and headstock
 
-This project was originally designed to be CNCed, you can find most components close to being ready for cutting in `freecad/Assembly3DP.FCStd` - though it was not attempted yet so there are definitelly some mistakes in there.
+This project was originally designed to be CNCed from aluminum, you can find most components close to being ready for cutting in `freecad/AssemblyCNC.FCStd` - though it was not attempted yet so there are definitelly some mistakes in there.
 
 ### Angular ball bearings
 
