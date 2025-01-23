@@ -211,6 +211,10 @@ Weakest point of all desktop lathes is sideways deflection of the chuck - not up
 
 Making headstock wider, full width of the base would reduce the severity of headstock twisting, allow for larger bearings to be used and for M12 rods which can be placed on the sides of each bearing (not slightly in the back like today).
 
+### Concrete filled headstock
+
+Remove sand hole and instead make the headstock hollow with an opening at the top. Use wall thickness of about 4mm. Fill it with no-set cement grout or similar product. This should help against the headstock sideways twisting which is the top problem currently. There's a risk of plastic separating from concrete so walls should have captive features on the inside. It also can be hard to print well due to horizontal and vertical holes in the headstock.
+
 ### Heavy alu profile
 
 [Heavy alu profile 160x80mm](https://www.myaluprofil.de/Aluminiumprofil-160x80-Schwer-Nut-8--I-Typ-kompatibel.html?language=en) might be a better choise for the base. It calls for the entire design to be re-done though since it offers plenty of better fastening options.
