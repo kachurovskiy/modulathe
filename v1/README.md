@@ -51,16 +51,9 @@ Print post-processing:
 
 https://github.com/user-attachments/assets/2fffe1df-2432-4740-9166-945ec31d264c
 
-## Spindle lock
+### Headstock cavity
 
-- [Polished hardened 9mm steel rod, 300mm](https://www.ebay.de/itm/333791840783?var=542864083101), 10€
-- [Reamer 9mm](https://www.aliexpress.com/item/4000614485972.html), 4€
-
-Cleanup the headstock 9mm through hole that's intended for the spindle lock pin with a 9mm reamer so that the polished rod slides through without getting stuck.
-
-## Headstock preparation
-
-[Z motor plate](step/BaseAndHeadstock3DP-MotorPlate.step) needs four M4 inserts melted in.
+**NOTE:** headstock cavity is a major source of horizontal headstock deflection, consider filling it with concrete or epoxy sand or using a concrete-filled headstock (next section).
 
 Wash 1 liter of sand in a bucket by filling with water, agitating and then draining the water off the side. Repeat until the water is clean, approx. 5 times.
 
@@ -69,6 +62,34 @@ Dry the sand thoroughly naturally and/or in the cooking pan.
 Fill the rectangular headstock cavity with the sand leaving space for the lid, compact by landing the headstock on the table lightly several times.
 
 [Print the lid](step/BaseAndHeadstock3DP-SandHoleCover.step), hammer it in flush through a large flat block so that it doesn't go in too deep.
+
+## Alternative headstock filled with concrete
+
+- [High-strength small grain self-compacting concrete](https://grey-element.shop/Hochfester-Vergussbeton-10Kg), 23€
+- [Vibration motor](https://www.aliexpress.com/item/1005007594000699.html), 27€
+
+![image](https://github.com/user-attachments/assets/52cc1e21-6280-4ab6-b42d-b039f7f4a52d)
+
+See https://www.youtube.com/shorts/znT_esMe_-g as for illustration.
+
+[Print a special version of the headstock](step/HeadstockConcrete125.step) on the side with 20 M5 holes with 5 wall loops, 2% gyroid infill and support for the rear bearing seat. Melt in all the inserts. Wrap the entire print in transparent packaging tape to make cleanup easy.
+
+Make a 45mm hole on the rear side of the headstock where the motor would be with a hole saw.
+
+Prepare a vibration plate by screwing the vibration motor to a large enough piece of plywood with foam mats on one side (vibration isolation) and a heavy metal plate on another side (added weight so that it doesn't jump around). Connecting motor via a foot pedal is very convenient since the hands will be busy.
+
+Wear eye protection and single-use latex gloves. Cut off 5L bottle nozzle as a pouring chute, keep the other half with water and sponge for cleanup, use the cap to plug the nozzle when you finish pouring.
+
+Prepare 7kg of concrete mix strictly according to instructions on the bag. Pour 1-2 litres at a time, vibrate for ~10s each time. Use flashlight to see the air pockets inside the print. Once air pockets stop shrinking, use a 2mm drill to create weep holes for air to come out, vibrate some more.
+
+This kind of concrete cures quickly but allow the headstock to rest for at least a few days (week is better) before loading it.
+
+## Spindle lock
+
+- [Polished hardened 9mm steel rod, 300mm](https://www.ebay.de/itm/333791840783?var=542864083101), 10€
+- [Reamer 9mm](https://www.aliexpress.com/item/4000614485972.html), 4€
+
+Cleanup the headstock 9mm through hole that's intended for the spindle lock pin with a 9mm reamer so that the polished rod slides through without getting stuck.
 
 ## Bed preparation
 
@@ -134,7 +155,7 @@ Looks like the shape of motor controller board has changed since I bought, check
 
 - [STEPPERONLINE 3Nm NEMA23 closed loop](https://www.ebay.de/itm/314811928812), 2 pcs., 166€
 
-There are cheaper motor options but these are reliable and quiet motors I prefer to use. Print [Z axis motor bracket](step/BaseAndHeadstock3DP-MotorPlate.step), [X axis motor bracket](step/HM10-57-3DP.step).
+There are cheaper motor options but these are reliable and quiet motors I prefer to use. Print [Z axis motor bracket](step/BaseAndHeadstock3DP-MotorPlate.step), [X axis motor bracket](step/HM10-57-3DP.step), each take 4 M4 threaded inserts melted in from the back.
 
 ## Ball screws
 
@@ -174,7 +195,7 @@ Print [the middle plate](step/MiddlePlate3DP.step) with supports, melt in the in
 Order all parts at the same time on https://cnc.jlcpcb.com/cnc-machining-quote to save on shipping. You can chose powder-coating in any color but it adds to the price. Only top plate needs threads.
 
 - [Top plate STEP file](step/TopPlate-NoThreads.step), [threads PDF](step/TopPlate.pdf)
-- [Headstock plate STEP file](step/HeadstockPlate.step)
+- [Headstock plate STEP file](step/HeadstockPlate.step) (not needed if you use concrete-filled headstock)
 - [Toolpost STEP file](step/Toolpost60-60CNC.step)
 
 Order in default precision, it's good.
@@ -210,10 +231,6 @@ For the next modulathe iteration I'm looking to use 3209B-2RS and 3210B-2RS angu
 Weakest point of all desktop lathes is sideways deflection of the chuck - not upwards deflection as it may seem. Pull on the long bar inserted into the chuck and you'll notice that it deflects front/back by 0.5mm while only deflecting 0.05mm up and down. It also depends on the chuck position so deflection oscillates on each chuck rotation creating vibrations and poor finish.
 
 Making headstock wider, full width of the base would reduce the severity of headstock twisting, allow for larger bearings to be used and for M12 rods which can be placed on the sides of each bearing (not slightly in the back like today).
-
-### Concrete filled headstock
-
-Remove sand hole and instead make the headstock hollow with an opening at the top. Use wall thickness of about 4mm. Fill it with no-set cement grout or similar product. This should help against the headstock sideways twisting which is the top problem currently. There's a risk of plastic separating from concrete so walls should have captive features on the inside. It also can be hard to print well due to horizontal and vertical holes in the headstock.
 
 ### Heavy alu profile
 
