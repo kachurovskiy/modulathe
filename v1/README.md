@@ -74,6 +74,8 @@ See https://www.youtube.com/shorts/znT_esMe_-g as for illustration.
 
 [Print a special version of the headstock](step/HeadstockConcrete125.step) on the side with 20 M5 holes with 5 wall loops, 2% gyroid infill and support for the rear bearing seat. Melt in all the inserts. Wrap the entire print in transparent packaging tape to make cleanup easy.
 
+Alternatively, use [headstock with sunk nuts](step/HeadstockConcreteSunk125.step) which is a variation allowing to keep the headstock top surface level.
+
 Make a 45mm hole on the rear side of the headstock where the motor would be with a hole saw.
 
 Prepare a vibration plate by screwing the vibration motor to a large enough piece of plywood with foam mats on one side (vibration isolation) and a heavy metal plate on another side (added weight so that it doesn't jump around). Connecting motor via a foot pedal is very convenient since the hands will be busy.
