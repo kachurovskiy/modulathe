@@ -108,6 +108,12 @@ Protect the front bearing with [4 printed supports](step/BearingSupport61-89-10m
 
 Print and install [spindle pulley](step/SpindleGear60GT3.step) with a 4x4x20mm steel key, tighten with light pressure using a M45 precision nut. Do not buy cheaper non-precision nuts.
 
+## Chuck
+
+- [Sanou 125mm 3-jaw chuck](https://www.aliexpress.com/item/1005005972611963.html), 62€
+
+Very important to buy a quality SANOU chuck with ground jaws. Don't get VEVOR chucks.
+
 ## Encoder
 
 - [600 pulse 5V optical rotary encoder](https://www.aliexpress.com/item/4001142743940.html), 18€
@@ -121,6 +127,8 @@ Print [encoder mount](step/EncoderMount.step) and [encoder gear](step/EncoderGea
 - [Belt GT3 384-3MGT-9](https://www.z24.de/a/40021-zahnriemen-3m-gt-gt3?breite=9&laenge=384&quantity=1), 15€
 
 Looks like the shape of motor controller board has changed since I bought, check if the new box fits [FreeCAD model](freecad/Motor1100Bracket.FCStd). [Pulley](step/MotorPulley30GT3.step) is 3D printed.
+
+**Warning: this motor can start spinning on power-on depending on the knob position. It's incompatible with machining safety requirements.**
 
 ## Axis motors
 
@@ -144,6 +152,69 @@ One of the nuts needs holes for M5 bolts drilled and counterbored, [see the mode
 
 Print Z axis [ball screw main mount](step/BK10Axial.step) and [tail mount](step/BF10.step). Main mount and X axis motor bracket each take 2 axial bearings. It's okay if it's hard to turn the ball screws initially, after a few days the high points on plastic yield a bit and they start to turn easier.
 
-## Further links and instructions
+## Linear rails
 
-To be added in the coming weeks. In summary it's HGR15 rails from AliExpress. Cross-slide plate ordered from JLCPCB with threads done by them according to the PDF in the `step` package. All models are already shared.
+- 500mm HGR15CA, 50€
+- 300mm HGR15CC, 45€
+
+Keep in mind that linear rails are not straight - best case they have a bow, worst case it's a spiral.
+
+When installing Z rails, first align 1 rail to be horizontally flat using a straight edge, shims/light and kitchen foil which is 0.01mm thick. Then align it to be straight. **Aligning the first Z rail right is critical, entire lathe is aligned off of it.**
+
+Off the first rail, align the second one using the indicator riding on the first rail in the same sequence.
+
+Aligning the X axis rails is easy, just push them to the guiding edges while tightening the bolts.
+
+## Middle plate
+
+Print [the middle plate](step/MiddlePlate3DP.step) with supports, melt in the inserts from the bottom side, sand all sides on the plate for flatness, glue in 10x2mm magnets on 4 sides.
+
+## CNC parts: top plate, headstock cover, toolpost
+
+Order all parts at the same time on https://cnc.jlcpcb.com/cnc-machining-quote to save on shipping. You can chose powder-coating in any color but it adds to the price. Only top plate needs threads.
+
+- [Top plate STEP file](step/TopPlate-NoThreads.step), [threads PDF](step/TopPlate.pdf)
+- [Headstock plate STEP file](step/HeadstockPlate.step)
+- [Toolpost STEP file](step/Toolpost60-60CNC.step)
+
+Order in default precision, it's good.
+
+TODO: top plate has 6 5mm holes for hex key access, they should be threaded to M6 to allow plugging them with grub screws once lathe is assembled to prevent debree from getting in.
+
+## Headstock alignment
+
+- [16mm hardened steel precision bar 500mm](https://www.aliexpress.com/item/1005004969480490.html), 18€
+
+I've ordered several bars and the one linked above is the best, others too bent or terrible scissor-cut.
+
+For left-right alignment, ride an indicator on the side of the bar and find average values at the start and end. Adjust the headstock until averages are close to equal.
+
+For up-down alignment, do the same procedure on the top of the bad. Sand down the bottom of the headstock to tilt in either direction. **This might affect your centerline and require sanding the middle plate by the same amount.**
+
+It's critical to epoxy the headstock in place in good horizontal alignment. Vertical alignment can be micro-adjusted with 4 M10 nuts, just don't overtighten them. According to ChatGPT calculation the limit for each nut is 30Nm. Headstock plate needs to be epoxied too for better pressure distribution.
+
+## Further improvements
+
+### CNC lathe bed and headstock
+
+This project was originally designed to be CNCed from aluminum, you can find most components close to being ready for cutting in `freecad/AssemblyCNC.FCStd` - though it was not attempted yet so there are definitelly some mistakes in there.
+
+### Angular ball bearings
+
+Ball bearings currently used aren't supposed to take big axial loads and generally have a tiny bit of play in them intended to compensate for thermal expansion. With M10 nuts squishing them into ovals, it remains to be seen how long they will last.
+
+For the next modulathe iteration I'm looking to use 3209B-2RS and 3210B-2RS angular double-row ball bearings which are heavier duty but larger.
+
+### Wider headstock
+
+Weakest point of all desktop lathes is sideways deflection of the chuck - not upwards deflection as it may seem. Pull on the long bar inserted into the chuck and you'll notice that it deflects front/back by 0.5mm while only deflecting 0.05mm up and down. It also depends on the chuck position so deflection oscillates on each chuck rotation creating vibrations and poor finish.
+
+Making headstock wider, full width of the base would reduce the severity of headstock twisting, allow for larger bearings to be used and for M12 rods which can be placed on the sides of each bearing (not slightly in the back like today).
+
+### Concrete filled headstock
+
+Remove sand hole and instead make the headstock hollow with an opening at the top. Use wall thickness of about 4mm. Fill it with no-set cement grout or similar product. This should help against the headstock sideways twisting which is the top problem currently. There's a risk of plastic separating from concrete so walls should have captive features on the inside. It also can be hard to print well due to horizontal and vertical holes in the headstock.
+
+### Heavy alu profile
+
+[Heavy alu profile 160x80mm](https://www.myaluprofil.de/Aluminiumprofil-160x80-Schwer-Nut-8--I-Typ-kompatibel.html?language=en) might be a better choise for the base. It calls for the entire design to be re-done though since it offers plenty of better fastening options.
