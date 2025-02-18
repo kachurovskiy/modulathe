@@ -32,13 +32,13 @@ Tube ends are closed using the printed [end caps](step/Pipe160x80Cap1.step) whic
 
 NOTE: you can use [heavy alu profile 160x80mm](https://www.myaluprofil.de/Aluminiumprofil-160x80-Schwer-Nut-8--I-Typ-kompatibel.html?language=en) instead, it's more expensive but needs no cutting, cleaning or grinding.
 
-## Printing the bed and headstock
+## Bed printing
 
 - [11kg PETG filament](https://www.ebay.de/itm/354057573174?var=624933263557), 109€
 
-Split [BaseAndHeadstock3DP.step](step/BaseAndHeadstock3DP.step) vertically between the bed and the headstock at 30.01mm [using e.g. Bambu cut tool](https://wiki.bambulab.com/en/software/bambu-studio/cut-tool). Split the bed in 3 pieces avoiding cuts on bolt holes. Side facing the bed will get the worst geomety, orient accordingly.
+If everything prints on the first try you might only need 6kg of filament for all prints.
 
-![image](https://github.com/user-attachments/assets/0efe83ff-15fc-455f-9503-fa06ed7b5852)
+Split the bed in 3 pieces avoiding cuts on bolt holes [using e.g. Bambu cut tool](https://wiki.bambulab.com/en/software/bambu-studio/cut-tool). **Print vertically.** Side facing the bed will get the worst geomety, orient accordingly.
 
 - Enable 15mm adhesion brim
 - Enable support for the headstock rear bearing seat
@@ -51,30 +51,28 @@ Print post-processing:
 
 https://github.com/user-attachments/assets/2fffe1df-2432-4740-9166-945ec31d264c
 
-### Headstock cavity
+## Bed preparation
 
-**NOTE:** headstock cavity is a major source of horizontal headstock deflection, consider filling it with concrete or epoxy sand or using a concrete-filled headstock (next section).
+Melt in threaded inserts from the bottom and the sides - not from the top. Ensure they are flush or below the surface. M4 inserts on the bottom are optional, they are intended to accept grub screws that can be used to level the bed while glueing it to the steel tube.
 
-Wash 1 liter of sand in a bucket by filling with water, agitating and then draining the water off the side. Repeat until the water is clean, approx. 5 times.
+Glue bed from the pieces together 1 connection at the time aiming for the top side surface flatness. Bottom surface of the resulting part can be uneven, it doesn't matter.
 
-Dry the sand thoroughly naturally and/or in the cooking pan.
+Use a clean flat surface and layers of packaging tape (mine is 0.04mm thick) to perfectly align the 2 parts.
 
-Fill the rectangular headstock cavity with the sand leaving space for the lid, compact by landing the headstock on the table lightly several times.
+Wait until epoxy is no longer flowing (approx 1hr) before applying it so that it doesn't leak out. Once cured, cut off the excess epoxy with a chisel.
 
-[Print the lid](step/BaseAndHeadstock3DP-SandHoleCover.step), hammer it in flush through a large flat block so that it doesn't go in too deep.
+https://github.com/user-attachments/assets/5a579cde-1618-4fe0-a3cb-860afe8003b4
 
-## Alternative headstock filled with concrete
+## Headstock
 
 - [High-strength small grain self-compacting concrete](https://grey-element.shop/Hochfester-Vergussbeton-10Kg), 23€
 - [Vibration motor](https://www.aliexpress.com/item/1005007594000699.html), 27€
 
 ![image](https://github.com/user-attachments/assets/52cc1e21-6280-4ab6-b42d-b039f7f4a52d)
 
-See https://www.youtube.com/shorts/znT_esMe_-g as for illustration.
+See https://www.youtube.com/shorts/znT_esMe_-g for illustration.
 
-[Print a special version of the headstock](step/HeadstockConcrete125.step) on the side with 20 M5 holes with 5 wall loops, 2% gyroid infill and support for the rear bearing seat. Melt in all the inserts. Wrap the entire print in transparent packaging tape to make cleanup easy.
-
-Alternatively, use [headstock with sunk nuts](step/HeadstockConcreteSunk125.step) which is a variation allowing to keep the headstock top surface level.
+[Print headstock](step/HeadstockConcreteSunk125.step) on the side with 20 M5 holes with 5 wall loops, 2% gyroid infill and support for the rear bearing seat. Melt in all the inserts. Wrap the entire print in transparent packaging tape to make cleanup easy.
 
 Make a 45mm hole on the rear side of the headstock where the motor would be with a hole saw.
 
@@ -93,24 +91,12 @@ This kind of concrete cures quickly but allow the headstock to rest for at least
 
 Cleanup the headstock 9mm through hole that's intended for the spindle lock pin with a 9mm reamer so that the polished rod slides through without getting stuck.
 
-## Bed preparation
-
-Melt in threaded inserts from the bottom and the sides - not from the top. Ensure they are flush or below the surface. M4 inserts on the bottom are optional, they are intended to accept grub screws that can be used to level the bed while glueing it to the steel tube.
-
-Glue bed from the pieces together 1 connection at the time aiming for the top side surface flatness. Bottom surface of the resulting part can be uneven, it doesn't matter.
-
-Use a clean flat surface and layers of packaging tape (mine is 0.04mm thick) to perfectly align the 2 parts.
-
-Wait until epoxy is no longer flowing (approx 1hr) before applying it so that it doesn't leak out. Once cured, cut off the excess epoxy with a chisel.
-
-https://github.com/user-attachments/assets/5a579cde-1618-4fe0-a3cb-860afe8003b4
-
 ## Concrete and threaded rods
 
 - Pre-mixed concrete 25kg, 8€
 - 2 M10 threaded rods 1m, 9€
 
-Cut 4 threaded rods pieces each 340mm long.
+Cut 4 threaded rods pieces each 323-340mm long. **Check that the length is right for your headstock and pipe combination and there will be enough thread for nut and washer.**
 
 Mark 4 holes for threaded rods by placing the bed in it's intended position on the pipe. Drill 4 holes under the headstock. Use 10, 11 or 12mm drill. Print [2 pipe covers](step/Pipe160x80Cap1.step) and cap 1 end of the pipe.
 
@@ -157,7 +143,7 @@ Looks like the shape of motor controller board has changed since I bought, check
 
 - [STEPPERONLINE 3Nm NEMA23 closed loop](https://www.ebay.de/itm/314811928812), 2 pcs., 166€
 
-There are cheaper motor options but these are reliable and quiet motors I prefer to use. Print [Z axis motor bracket](step/BaseAndHeadstock3DP-MotorPlate.step), [X axis motor bracket](step/HM10-57-3DP.step), each take 4 M4 threaded inserts melted in from the back.
+There are cheaper motor options but these are reliable and quiet motors I prefer to use. Print [Z axis motor bracket](step/ZMotorMount.step), [X axis motor bracket](step/HM10-57-3DP.step), each take 4 M4 threaded inserts melted in from the back.
 
 ## Ball screws
 
@@ -197,7 +183,6 @@ Print [the middle plate](step/MiddlePlate3DP.step) with supports, melt in the in
 Order all parts at the same time on https://cnc.jlcpcb.com/cnc-machining-quote to save on shipping. You can chose powder-coating in any color but it adds to the price. Only top plate needs threads.
 
 - [Top plate STEP file](step/TopPlate-NoThreads.step), [threads PDF](step/TopPlate.pdf)
-- [Headstock plate STEP file](step/HeadstockPlate.step) (not needed if you use concrete-filled headstock)
 - [Toolpost STEP file](step/Toolpost60-60CNC.step)
 
 Order in default precision, it's good.
@@ -215,6 +200,24 @@ For left-right alignment, ride an indicator on the side of the bar and find aver
 For up-down alignment, do the same procedure on the top of the bad. Sand down the bottom of the headstock to tilt in either direction. **This might affect your centerline and require sanding the middle plate by the same amount.**
 
 It's critical to epoxy the headstock in place in good horizontal alignment. Vertical alignment can be micro-adjusted with 4 M10 nuts, just don't overtighten them. According to ChatGPT calculation the limit for each nut is 30Nm. Headstock plate needs to be epoxied too for better pressure distribution.
+
+## Tailstock
+
+- [MT2 100mm tailstock](https://www.aliexpress.com/item/1005005664958541.html), option B, 90€
+- [Set of 4, HGH15CA linear rail carriage](https://www.aliexpress.com/item/4001272098866.html), 30€
+- [Set of 10, M5 18mm countersunk hex bolts](https://www.aliexpress.com/item/1005002365855820.html), 4€
+- [2pcs 30 T-track 40cm, 2pcs M8 Rod Handle](https://www.aliexpress.com/item/1005006225385865.html), 17€
+- 16 of M4 35mm hex cylined head bolts
+- 4 M8 40mm bolts
+- 4 M8 threaded inserts
+
+Print the [tailstock plate](step/TailstockPlate-NoThreads.step), sand it lightly for flatness, optionally use [tailstock holder](step/TailstockHolder.step) for storage of the tailstock off the lathe.
+
+Bolt down the T-slots using countersunk bolts, bolt down the plate using M4 bolts, optionally through M4 washers.
+
+Align the tailstock with the headstock using the [aligner pin](step/CenterlineFinder.step) held in the chuck or ride an indicator in the spindle over the dead center.
+
+Ride an indicator on the ground extending shaft of the tailstock to ensure it's parallel to the rails.
 
 ## Further improvements
 
