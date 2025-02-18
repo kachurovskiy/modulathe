@@ -187,8 +187,6 @@ Order all parts at the same time on https://cnc.jlcpcb.com/cnc-machining-quote t
 
 Order in default precision, it's good.
 
-TODO: top plate has 6 5mm holes for hex key access, they should be threaded to M6 to allow plugging them with grub screws once lathe is assembled to prevent debree from getting in.
-
 ## Headstock alignment
 
 - [16mm hardened steel precision bar 500mm](https://www.aliexpress.com/item/1005004969480490.html), 18€
