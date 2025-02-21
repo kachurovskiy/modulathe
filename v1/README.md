@@ -67,6 +67,7 @@ https://github.com/user-attachments/assets/5a579cde-1618-4fe0-a3cb-860afe8003b4
 
 - [High-strength small grain self-compacting concrete](https://grey-element.shop/Hochfester-Vergussbeton-10Kg), 23€
 - [Vibration motor](https://www.aliexpress.com/item/1005007594000699.html), 27€
+- [30mm forstner bit](https://www.aliexpress.com/item/1005007128346762.html), 11€
 
 ![image](https://github.com/user-attachments/assets/52cc1e21-6280-4ab6-b42d-b039f7f4a52d)
 
@@ -80,9 +81,11 @@ Prepare a vibration plate by screwing the vibration motor to a large enough piec
 
 Wear eye protection and single-use latex gloves. Cut off 5L bottle nozzle as a pouring chute, keep the other half with water and sponge for cleanup, use the cap to plug the nozzle when you finish pouring.
 
-Prepare 7kg of concrete mix strictly according to instructions on the bag. Pour 1-2 litres at a time, vibrate for ~10s each time. Use flashlight to see the air pockets inside the print. Once air pockets stop shrinking, use a 2mm drill to create weep holes for air to come out, vibrate some more.
+Prepare 7kg of concrete mix strictly according to instructions on the bag. Pour 1-2 litres at a time, vibrate for ~40s each time. Use flashlight to see the air pockets inside the print. Once air pockets stop shrinking, use a 2mm drill to create weep holes for air to come out, vibrate some more.
 
 This kind of concrete cures quickly but allow the headstock to rest for at least a few days (week is better) before loading it.
+
+Use a 30mm forstener bit to drill out the plastic where the threaded rod washer will be placed so that the headstock doesn't lose tension over time.
 
 ## Spindle lock
 
