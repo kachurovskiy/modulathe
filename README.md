@@ -2,7 +2,7 @@ This software and instructions are [provided as is](LICENSE), without warranty o
 
 # modulathe
 
-![image](https://github.com/user-attachments/assets/865b4746-161d-4c95-9fc8-a569a91396af)
+![modulathe v1](https://github.com/user-attachments/assets/4bb456a1-8b5c-49c3-94b5-cf9471b4e1f0)
 
 Modular digital open-source DIY desktop lathe for processing metal, wooden and plastic parts.
 
