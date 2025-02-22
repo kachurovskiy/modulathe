@@ -41,7 +41,6 @@ If everything prints on the first try you might only need 6kg of filament for al
 Split the bed in 3 pieces avoiding cuts on bolt holes [using e.g. Bambu cut tool](https://wiki.bambulab.com/en/software/bambu-studio/cut-tool). **Print vertically.** Side facing the bed will get the worst geomety, orient accordingly.
 
 - Enable 15mm adhesion brim
-- Enable support for the headstock rear bearing seat
 - Check how much your filament shrinks once printed, scaling 100.15% helped in my case
 
 Print post-processing:
