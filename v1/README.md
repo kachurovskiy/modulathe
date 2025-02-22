@@ -154,7 +154,7 @@ There are cheaper motor options but these are reliable and quiet motors I prefer
 
 It's critically important to get C5 quality, branded ball screws and nuts. C7 or unrated ball screws will much decrease the lathe characteristics due to 2-3x larger play and deflection.
 
-One of the nuts needs holes for M5 bolts drilled and counterbored, [see the model](freecad/BallNutMount2M5-3DP.FCStd). Alternatively you can just 3D print it.
+One of the nut housings needs holes for M5 bolts drilled and counterbored, [see the model](freecad/BallNutMount2M5-3DP.FCStd). Alternatively you can just 3D print it.
 
 ## Ball screw mounts
 
