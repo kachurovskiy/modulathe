@@ -16,6 +16,17 @@ M5 (10mm 100 pcs.) and M4 (8mm 50 pcs.) threaded inserts would be used, availabl
 
 M5 and M4 cylinder head bolts of various lengths are needed, get pack of 50 of each length - 12mm, 16mm, 20mm, 25mm, 30mm, 35mm.
 
+## Issues with modulathe v1
+
+Now that I've used my v1 for some time, a few issues became clear with this design that you should be aware before starting the build:
+
+- Cross slide is rather wide at 16mm, 2x the size of a cast iron version and it takes away from usable length of the lathe
+- Tailstock also has 3cm longer base than cast iron version and it takes away from usable length of the lathe
+- Default length of 680mm is smaller than WM210 and is further reduced by the cross slide and tailstock, consider increasing it by at least 100mm
+- Tool has to be placed in the middle / right side of the cross slide to reach the start of the part which limits the chuck jaw extension from the chuck when moving left to access the left side of the part. On WM210 the tool can reach both right sides of the part and not interfere with the jaws on the far left.
+- Dust shields can't be used with the tailstock as there's not enough space for them
+- Plastic under the nuts and washers on the head needs to be removed and pressure needs to be applied to the concrete - it yields otherwise
+
 ## Preparing the steel tube
 
 - [160x80x4mm steel tube](https://www.ebay.de/itm/132751662693?var=432062251186), 28€
