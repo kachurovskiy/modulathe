@@ -1,6 +1,6 @@
 # modulathe v1
 
-![image](https://github.com/user-attachments/assets/865b4746-161d-4c95-9fc8-a569a91396af)
+![modulathe v1](https://github.com/user-attachments/assets/4bb456a1-8b5c-49c3-94b5-cf9471b4e1f0)
 
 Decide the bed length of your future lathe. By default it's 680mm. It affects:
 
@@ -15,6 +15,17 @@ Any printed parts can be modified using FreeCAD 1.0, models in the [freecad](fre
 M5 (10mm 100 pcs.) and M4 (8mm 50 pcs.) threaded inserts would be used, available for 10€ on AliExpress.
 
 M5 and M4 cylinder head bolts of various lengths are needed, get pack of 50 of each length - 12mm, 16mm, 20mm, 25mm, 30mm, 35mm.
+
+## Issues with modulathe v1
+
+Now that I've used my v1 for some time, a few issues became clear with this design that you should be aware before starting the build:
+
+- Cross slide is rather wide at 16mm, 2x the size of a cast iron version and it takes away from usable length of the lathe
+- Tailstock also has 3cm longer base than cast iron version and it takes away from usable length of the lathe
+- Default length of 680mm is smaller than WM210 and is further reduced by the cross slide and tailstock, consider increasing it by at least 100mm
+- Tool has to be placed in the middle / right side of the cross slide to reach the start of the part which limits the chuck jaw extension from the chuck when moving left to access the left side of the part. On WM210 the tool can reach both right sides of the part and not interfere with the jaws on the far left.
+- Dust shields can't be used with the tailstock as there's not enough space for them
+- Plastic under the nuts and washers on the head needs to be removed and pressure needs to be applied to the concrete - it yields otherwise
 
 ## Preparing the steel tube
 
@@ -41,7 +52,6 @@ If everything prints on the first try you might only need 6kg of filament for al
 Split the bed in 3 pieces avoiding cuts on bolt holes [using e.g. Bambu cut tool](https://wiki.bambulab.com/en/software/bambu-studio/cut-tool). **Print vertically.** Side facing the bed will get the worst geomety, orient accordingly.
 
 - Enable 15mm adhesion brim
-- Enable support for the headstock rear bearing seat
 - Check how much your filament shrinks once printed, scaling 100.15% helped in my case
 
 Print post-processing:
@@ -67,6 +77,7 @@ https://github.com/user-attachments/assets/5a579cde-1618-4fe0-a3cb-860afe8003b4
 
 - [High-strength small grain self-compacting concrete](https://grey-element.shop/Hochfester-Vergussbeton-10Kg), 23€
 - [Vibration motor](https://www.aliexpress.com/item/1005007594000699.html), 27€
+- [30mm forstner bit](https://www.aliexpress.com/item/1005007128346762.html), 11€
 
 ![image](https://github.com/user-attachments/assets/52cc1e21-6280-4ab6-b42d-b039f7f4a52d)
 
@@ -80,9 +91,11 @@ Prepare a vibration plate by screwing the vibration motor to a large enough piec
 
 Wear eye protection and single-use latex gloves. Cut off 5L bottle nozzle as a pouring chute, keep the other half with water and sponge for cleanup, use the cap to plug the nozzle when you finish pouring.
 
-Prepare 7kg of concrete mix strictly according to instructions on the bag. Pour 1-2 litres at a time, vibrate for ~10s each time. Use flashlight to see the air pockets inside the print. Once air pockets stop shrinking, use a 2mm drill to create weep holes for air to come out, vibrate some more.
+Prepare 7kg of concrete mix strictly according to instructions on the bag. Pour 1-2 litres at a time, vibrate for ~40s each time. Use flashlight to see the air pockets inside the print. Once air pockets stop shrinking, use a 2mm drill to create weep holes for air to come out, vibrate some more.
 
 This kind of concrete cures quickly but allow the headstock to rest for at least a few days (week is better) before loading it.
+
+Use a 30mm forstener bit to drill out the plastic where the threaded rod washer will be placed so that the headstock doesn't lose tension over time.
 
 ## Spindle lock
 
@@ -152,7 +165,7 @@ There are cheaper motor options but these are reliable and quiet motors I prefer
 
 It's critically important to get C5 quality, branded ball screws and nuts. C7 or unrated ball screws will much decrease the lathe characteristics due to 2-3x larger play and deflection.
 
-One of the nuts needs holes for M5 bolts drilled and counterbored, [see the model](freecad/BallNutMount2M5-3DP.FCStd). Alternatively you can just 3D print it.
+One of the nut housings needs holes for M5 bolts drilled and counterbored, [see the model](freecad/BallNutMount2M5-3DP.FCStd). Alternatively you can just 3D print it.
 
 ## Ball screw mounts
 
@@ -168,17 +181,17 @@ Print Z axis [ball screw main mount](step/BK10Axial.step) and [tail mount](step/
 
 Keep in mind that linear rails are not straight - best case they have a bow, worst case it's a spiral.
 
-When installing Z rails, first align 1 rail to be horizontally flat using a straight edge, shims/light and kitchen foil which is 0.01mm thick. Then align it to be straight. **Aligning the first Z rail right is critical, entire lathe is aligned off of it.**
+When installing Z rails, first align 1 rail to be horizontally flat using a straight edge, shims/light and kitchen foil which is 0.01mm thick. Then align it to be straight. **Aligning the first Z rail right is critical, entire lathe is aligned from it.**
 
-Off the first rail, align the second one using the indicator riding on the first rail in the same sequence.
+Align the second rail using the indicator riding on the first rail carriage in the same sequence.
 
-Aligning the X axis rails is easy, just push them to the guiding edges while tightening the bolts.
+Aligning the X axis rails is done by pushing them to the guiding edges while tightening the bolts.
 
 ## Middle plate
 
 Print [the middle plate](step/MiddlePlate3DP.step) with supports, melt in the inserts from the bottom side, sand all sides on the plate for flatness, glue in 10x2mm magnets on 4 sides.
 
-## CNC parts: top plate, headstock cover, toolpost
+## CNC parts
 
 Order all parts at the same time on https://cnc.jlcpcb.com/cnc-machining-quote to save on shipping. You can chose powder-coating in any color but it adds to the price. Only top plate needs threads.
 
@@ -195,9 +208,11 @@ I've ordered several bars and the one linked above is the best, others too bent 
 
 For left-right alignment, ride an indicator on the side of the bar and find average values at the start and end. Adjust the headstock until averages are close to equal.
 
-For up-down alignment, do the same procedure on the top of the bad. Sand down the bottom of the headstock to tilt in either direction. **This might affect your centerline and require sanding the middle plate by the same amount.**
+For up-down alignment, do the same procedure on the top of the bar. Sand down the bottom of the headstock to tilt in either direction.
 
-It's critical to epoxy the headstock in place in good horizontal alignment. Vertical alignment can be micro-adjusted with 4 M10 nuts, just don't overtighten them. According to ChatGPT calculation the limit for each nut is 30Nm. Headstock plate needs to be epoxied too for better pressure distribution.
+Make sure centerline height of the headstock and top plate with toolpost and 20mm tool match. If headstock is too low, print thin sheets of plastic by using the slicer cutting tool on the headstock model. If headstock is too high, sand down the excess.
+
+It's critical to epoxy the headstock in place in good horizontal alignment. Vertical alignment can be micro-adjusted with 4 M10 nuts, just don't overtighten them. According to ChatGPT calculation the limit for each nut is 30Nm but I would stop at 15Nm.
 
 ## Tailstock
 
@@ -209,13 +224,13 @@ It's critical to epoxy the headstock in place in good horizontal alignment. Vert
 - 4 M8 40mm bolts
 - 4 M8 threaded inserts
 
-Print the [tailstock plate](step/TailstockPlate-NoThreads.step), sand it lightly for flatness, optionally use [tailstock holder](step/TailstockHolder.step) for storage of the tailstock off the lathe.
+Print the [tailstock plate](step/TailstockPlate-NoThreads.step) and [decorative cover](step/TailstockCover.step), sand it lightly for flatness, optionally use [tailstock holder](step/TailstockHolder.step) for tailstock storage off the lathe.
 
 Bolt down the T-slots using countersunk bolts, bolt down the plate using M4 bolts, optionally through M4 washers.
 
-Align the tailstock with the headstock using the [aligner pin](step/CenterlineFinder.step) held in the chuck or ride an indicator in the spindle over the dead center.
+Align the tailstock with the headstock using the [aligner pin](step/CenterlineFinder.step) held in the chuck or ride an indicator in the spindle over the dead center. Ride an indicator on the ground extending shaft of the tailstock to ensure it's parallel to the rails.
 
-Ride an indicator on the ground extending shaft of the tailstock to ensure it's parallel to the rails.
+Alternatively, hold the [MT2-MT2 adapter](https://www.aliexpress.com/item/1005002023109756.html) in the chuck and [slide the tailstock onto it](https://youtu.be/iYv3yF6TqUQ?si=mZVERqWChZEHyzbS&t=150), then tighten the bolts.
 
 ## Further improvements
 
@@ -225,7 +240,7 @@ This project was originally designed to be CNCed from aluminum, you can find mos
 
 ### Angular ball bearings
 
-Ball bearings currently used aren't supposed to take big axial loads and generally have a tiny bit of play in them intended to compensate for thermal expansion. With M10 nuts squishing them into ovals, it remains to be seen how long they will last.
+Ball bearings currently used aren't supposed to take big axial loads and generally have a tiny bit of play in them intended to compensate for thermal expansion. The rear bearing, especially if held with thread lock, is easily damaged during disassembly and it's recommended to not reuse it.
 
 For the next modulathe iteration I'm looking to use 3209B-2RS and 3210B-2RS angular double-row ball bearings which are heavier duty but larger.
 
@@ -234,7 +249,3 @@ For the next modulathe iteration I'm looking to use 3209B-2RS and 3210B-2RS angu
 Weakest point of all desktop lathes is sideways deflection of the chuck - not upwards deflection as it may seem. Pull on the long bar inserted into the chuck and you'll notice that it deflects front/back by 0.5mm while only deflecting 0.05mm up and down. It also depends on the chuck position so deflection oscillates on each chuck rotation creating vibrations and poor finish.
 
 Making headstock wider, full width of the base would reduce the severity of headstock twisting, allow for larger bearings to be used and for M12 rods which can be placed on the sides of each bearing (not slightly in the back like today).
-
-### Heavy alu profile
-
-[Heavy alu profile 160x80mm](https://www.myaluprofil.de/Aluminiumprofil-160x80-Schwer-Nut-8--I-Typ-kompatibel.html?language=en) might be a better choise for the base. It calls for the entire design to be re-done though since it offers plenty of better fastening options.
