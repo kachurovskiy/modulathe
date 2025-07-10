@@ -16,6 +16,8 @@ M5 (10mm 100 pcs.) and M4 (8mm 50 pcs.) threaded inserts would be used, availabl
 
 M5 and M4 cylinder head bolts of various lengths are needed, get pack of 50 of each length - 12mm, 16mm, 20mm, 25mm, 30mm, 35mm.
 
+Once your build is done, consider sharing your experience and results in [Discussions](https://github.com/kachurovskiy/modulathe/discussions).
+
 ## Issues with modulathe v1
 
 Now that I've used my v1 for some time, a few issues became clear with this design that you should be aware before starting the build:
