@@ -1,3 +1,5 @@
+This software and instructions are [provided as is](../LICENSE), without warranty of any kind. [Lathes are dangerous.](https://www.worksafe.vic.gov.au/safe-use-metal-turning-lathes)
+
 # modulathe v1
 
 ![modulathe v1](https://github.com/user-attachments/assets/4bb456a1-8b5c-49c3-94b5-cf9471b4e1f0)
