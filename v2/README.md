@@ -51,9 +51,11 @@ FreeCAD models that can be used to modify certain parts: https://github.com/kach
 
 ## Bill of materials
 
-About 910 EUR in large items, not including concrete, motors or controller.
+- 910 EUR in large items detailed below
+- 290 EUR for CNC middle plate, top plate, tool holder cube
+- 110 EUR for the aluminum CNC tailstock plate (optional)
 
-400 EUR more for CNC parts (middle plate, top plate, tailstock plate, tool holder cube).
+Not counting motors, controller, concrete or rebar.
 
 ### Spindle 242 EUR
 
@@ -84,10 +86,11 @@ About 910 EUR in large items, not including concrete, motors or controller.
 - [30mm T-track 40cm](https://www.aliexpress.com/item/1005006225385865.html) - 14 EUR
 - [T-track 2pcs T Screw Handle](https://www.aliexpress.com/item/1005006225385865.html) - 6 EUR
 
-### Other 192 EUR
+### Other 194 EUR
 
 - [10kg of PETG](https://www.ebay.de/itm/354057573174?var=624933263556) - 108 EUR
 - [2 packs of M5 inserts 10mm length, outside diameter 7mm, 100Pcs](https://www.aliexpress.com/item/1005006798286851.html) - 15 EUR
+- [M8 inserts 12mm length, outside diameter 10mm, 10Pcs](https://www.aliexpress.com/item/1005008666672949.html) - 2 EUR
 - [Large 120 grit diamond plate](https://www.aliexpress.com/item/1005007177296408.html) - 10 EUR
 - [Wet sandpaper 5pcs, 230x280mm, 240 grit](https://www.aliexpress.com/item/1005005510517824.html) - 6 EUR
 - [4x rubber feet 38xM8x15mm](https://www.aliexpress.com/item/1005006179757754.html) - 7 EUR
@@ -99,7 +102,7 @@ About 910 EUR in large items, not including concrete, motors or controller.
 
 Standard 2-component epoxy is used to glue the bed molds together, seal concrete parts and glue aligned head to the bed.
 
-Always lightly sand and clean the parts with isopropanol before epoxying. Remove excess epoxy with a woodworking chisel. Wait 30m for epoxy to increase viscosity if the gaps are large.
+Always lightly sand and clean the parts with isopropanol before epoxying. Remove excess wet expoxy with paper towels, excess dry epoxy with a woodworking chisel. If the glued gaps are large, wait 30m for epoxy to increase viscosity before use.
 
 Always wear gloves, glasses and other protective equipment when working with epoxy, it's very allergic.
 
@@ -112,7 +115,7 @@ Don't forget to check the height, too. Adjust the slicer settings so that your f
 
 ### Plastic to use
 
-10kg set of PETG rolls e.g. https://www.ebay.de/itm/354057573174?var=624933263556
+[10kg set of PETG rolls](https://www.ebay.de/itm/354057573174?var=624933263556) - printing all molds takes much less than that but it gives you a chance to re-print in case of mistakes.
 
 ### Print settings
 
@@ -120,11 +123,15 @@ Always print with adhesion layer to reduce the risk of mold deformation during p
 
 ### Chamber temperature
 
-For good part geometry it's critical to maintain high, constant printing chamber temperature throughout the printing process and let the print cool slowly. Additional outside insulation of the printing chamber is necessary.
+For good part geometry it's critical to maintain high, constant printing chamber temperature throughout the printing process and let the print cool slowly. Additional outside insulation of the printing chamber is necessary. It's much better to print a good mold than to fix a concrete part.
 
 ### Sanding plate for the molds
 
 Get a large, quality 240 grit sandpaper e.g. https://www.aliexpress.com/item/1005005510517824.html and glue it on a flat piece of water-resistant MDF or plywood with double-sided tape. Avoid tape gaps behind the sandpaper. All flat sides of 3D prints are to be lightly sanded with a spray of water for a better fit.
+
+### Adaptive layer height
+
+Take advantage of slicers ability to reduce layer height when printing overhangs for better quality without the use of supports.
 
 ## Molds
 
@@ -136,9 +143,11 @@ Print 8 [Bed-MoldConnector.step](step/Bed-MoldConnector.step) to align the bed p
 
 Print 4 [Bed-Spoke.step](step/Bed-Spoke.step) and epoxy them into the main bed mold. Make sure they stand straight and flush.
 
+Print 38x [Head-DepthSpacer5.step](step/Head-DepthSpacer5.step) for later use.
+
 Before gluing the mold, make sure that the rail holes in the mold match ones on your HGR20 rails. If mold holes are too close together, print thin shims to compensate.
 
-When gluing the mold together, it's not necessary to squeese it tight, connectors should hold it. Instead focus on glueing it straight to reduce post-processing.
+When gluing the mold together, it's not necessary to squeese it tight, connectors should hold it. Instead focus on gluing it straight to reduce post-processing.
 
 ### Head
 
@@ -169,4 +178,28 @@ Sand the molds lightly to improve surface quality.
 
 Glue 4 Head-MoldSpoke.step into the Head-MoldTop.step flush with the open end of the mold so that they don't start moving during the concrete pour.
 
+### Tailstock
+
+Print [TailstockPlate-Mold.step](step/TailstockPlate-Mold.step) horizontally. Check that your vertical cylinders representing future bolt holes aren't undersized to be used for M5 and M8 bolts.
+
+Melt in 4 M5 threaded inserts from the inside, cover them with pieces of sticky tape so that concrete wouldn't get in.
+
+### Waxing
+
+Ensure all glued parts of the molds are in place before waxing.
+
 Treat all mold surfaces that will be touching concrete with bees wax.
+
+### In-concrete threaded inserts
+
+Inserts have to be free of wax so they're installed after waxing.
+
+- Bed needs 38 M5 inserts
+- Head needs 68 M5 inserts
+- Tailstock needs 4 M8 inserts
+
+Each insert is installed in place with a 25mm M5 cylinder bolt - 10mm goes to wall thickness, 5mm to plastic standoff and 10mm to threaded insert.
+
+If your bolt is too short, concrete will get into the threaded insert and make its usable depth smaller. If the bolt is too long, you might not be able to unscrew it once the concrete sets.
+
+Normally there's no need to wax the ends of the bolts, concrete won't stick to them.
