@@ -200,6 +200,65 @@ Inserts have to be free of wax so they're installed after waxing.
 
 Each insert is installed in place with a 25mm M5 cylinder bolt - 10mm goes to wall thickness, 5mm to plastic standoff and 10mm to threaded insert.
 
+For every M5 insert, don't forget to first install the `Head-DepthSpacer5.step` standoffs you printed previously. Without them, threaded insert will have minimal holding power.
+
 If your bolt is too short, concrete will get into the threaded insert and make its usable depth smaller. If the bolt is too long, you might not be able to unscrew it once the concrete sets.
 
 Normally there's no need to wax the ends of the bolts, concrete won't stick to them.
+
+## Concrete
+
+### Volume calculation
+
+- Bed is 8.9 litres
+- Headstock is 4.62 litres
+- Tailstock plate is 1.23 litres
+
+If you're pouring all 3 parts, total is approx. 15 litres of concrete.
+
+If you modify any of the parts, it's easy to measure volume of updated parts by opening the corresponding STEP file in 3D slicer that shows volume in cubic millimeters.
+
+### Mix design
+
+Mix requirements:
+
+- High compressive strength - at least 50 MPa
+- High tensile strength - at least 10 MPa
+- Has sufficient maximal layer thickness of at least 160mm
+- Does not require exotic equipment to mix and pour
+
+This rules out most or all of the home improvements bagged concrete since those mixes are usually around 10 MPa in compression and unrated for tensile stress.
+
+Having tried and being disappointed by some of the consumer-graded mixes on Amazon, I recommend going with professional mixes only. Do a small test pour and check compressive and tensile strength when in doubt.
+
+Standard concrete mixes shrink when cured - outside dimensions get smaller, inside holes get larger. Headstock bearings are easy to remove from shrinking mixes but they also don't hold much on friction and require some countermeasures.
+
+There are special expanding concrete mixes that slightly increase in side as they cure. Headstock bearings are hard to remove but they also hold very well just on friction.
+
+[SikaGrout-234 high-performance vibration-resistant expanding grout](https://tun.sika.com/dms/getdocument.get/a8b219c4-161c-44d6-b310-b7932fb5eb68/sikagrout-234.pdf) is what I used in my build. It produces 12.5L of product and can be supplemented with 2.5L of e.g. washed basalt gravel under 8mm. Use precisely the specified amount of water.
+
+### Reinforcement
+
+I didn't use any reinforcement - basalt fibers make the mix hard to compact and I forgot about steel rebar.
+
+Ideally there would be reinforcement embedded into the mix and additonally a space for two M12 rods to insert into the base after curing for post-tensioning.
+
+### Compaction
+
+Consider using a submersible concrete vibrator, they're cheap on AliExpress - just beware of the concrete splashing all over the place when you run it. I used a table with vibration motor but it only worked on the tailstock mold, other molds were too heavy for it.
+
+### Working surface for the molds
+
+Concrete is very heavy and you might end up with a bent bed if the bed mold is filled on an uneven surface or if the weight of concrete can deform the table with the mold.
+
+### Embedding bed feet into the concrete
+
+It might seem like you can just place the rubber feet into the wet concrete with M8 threded inserts attached but they will start sinking at an angle. It would be beneficial to have each pair of feet attached to a thin flat platform when curing.
+
+### Safety
+
+Concrete is very dangerous in both dry and wet forms, use appropriate protection and prevention measures e.g. vacuum up the airborne dust, cover skin, use waterproof gloves and face protection.
+
+### Curing
+
+Wrap the molds in plastic after the pour to keep the moisture in the mix for proper curing.
