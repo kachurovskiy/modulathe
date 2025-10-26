@@ -45,7 +45,7 @@ People who's needs might not be met by this project:
 
 ## Finding files and models
 
-STEP files that can be directrly used in 3D printer slicers and to order CNC parts: https://github.com/kachurovskiy/modulathe/tree/master/v2/step - several PDF files in there too for CNC parts with threads
+STEP files that can be directly used in 3D printer slicers and to order CNC parts: https://github.com/kachurovskiy/modulathe/tree/master/v2/step - several PDF files in there too for CNC parts with threads.
 
 FreeCAD models that can be used to modify certain parts: https://github.com/kachurovskiy/modulathe/tree/master/v2/freecad - see Assembly.FCStd for the overall picture.
 
@@ -98,6 +98,12 @@ Not counting motors, controller, concrete or rebar.
 - [Feeler gauge](https://www.aliexpress.com/item/1005007758368050.html) - 3 EUR
 - [Bees wax](https://www.amazon.de/-/en/dp/B09QPRQ531) - 9 EUR
 
+## Videos
+
+Concrete and mechanical components: https://youtu.be/lnFw8G95LGo
+
+Motors, wiring and operation: https://youtu.be/Vne_7rnhub0
+
 ## Using epoxy
 
 Standard 2-component epoxy is used to glue the bed molds together, seal concrete parts and glue aligned head to the bed.
@@ -123,7 +129,9 @@ Always print with adhesion layer to reduce the risk of mold deformation during p
 
 ### Chamber temperature
 
-For good part geometry it's critical to maintain high, constant printing chamber temperature throughout the printing process and let the print cool slowly. Additional outside insulation of the printing chamber is necessary. It's much better to print a good mold than to fix a concrete part.
+For good part geometry it's critical to maintain high, constant printing chamber temperature throughout the printing process and let the print cool slowly. Additional outside insulation of the printing chamber is necessary. Never open the door while printing.
+
+It's much better to print a good mold than to fix a concrete part.
 
 ### Sanding plate for the molds
 
@@ -261,4 +269,4 @@ Concrete is very dangerous in both dry and wet forms, use appropriate protection
 
 ### Curing
 
-Wrap the molds in plastic after the pour to keep the moisture in the mix for proper curing.
+Wrap the molds in plastic after the pour to keep the moisture in the mix for proper curing which usually takes 30 days.
