@@ -270,3 +270,29 @@ Concrete is very dangerous in both dry and wet forms, use appropriate protection
 ### Curing
 
 Wrap the molds in plastic after the pour to keep the moisture in the mix for proper curing which usually takes 30 days.
+
+### Mold removal
+
+See https://youtu.be/lnFw8G95LGo?si=tCgMu5pTe1_LQitY&t=218 for an example of mold removal and cleanup of the castings.
+
+Double check that you removed all M5 bolts before de-molding. Even a single remaining bolt can cause trouble.
+
+#### Headstock mold removal
+
+If you have excess concrete on the headstock legs protruding from the mold, it might be easier to trim this before removing the mold since the mold provides easy guidance on how material still needs to be removed.
+
+Use a diamong grinding disc from AliExpress (8 euro) and an angle grinder. Removing significant amount of concrete by hand with a diamond plate would be exhausting.
+
+Depending on the concrete you used, it might be possible to remove the bearings using an M12 threaded rod and some spacers. I had to resort to the hydraulic press because I used expanding concrete and the inner spindle 3D prints crumbled due to insufficient infill.
+
+#### Bed mold removal
+
+It should help to drill out the spacers under the headstock location with an undersized drill first.
+
+After that, turn the mold upside-down use the light drop technique from the video above.
+
+#### Tailstock mold removal
+
+Cleanup and level the concrete sticking out of the mold before de-molding. You should see the 22 plastic circles in the concrete that would need to be drilled out later.
+
+Alternate applying some pressure on the concrete with 4 M5 bolts and dropping the mold upside-down on wooden blocks - https://youtu.be/lnFw8G95LGo?si=SQofnwwmO9b61xAE&t=192
