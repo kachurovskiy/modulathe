@@ -4,7 +4,7 @@ This software and instructions are [provided as is](../LICENSE), without warrant
 
 **NOTE: this version is still a work in progress, below is the provisinal documentation.**
 
-free and open-source metal lathe design where we print the forms using a 3D printer, fill them with concrete or other suitable mix, post-process the parts with sanding and assemble a CNC-ready lathe together using off-the-shelf parts and a few custom CNCed pieces.
+Free and open-source metal lathe design where we print the forms using a 3D printer, fill them with concrete or other suitable mix, post-process the parts with sanding and assemble a CNC-ready lathe together using off-the-shelf parts and a few custom CNCed pieces.
 
 - 125mm chuck, MT5 spindle with 38mm through-hole
 - 136mm cross-slide travel
@@ -296,3 +296,57 @@ After that, turn the mold upside-down use the light drop technique from the vide
 Cleanup and level the concrete sticking out of the mold before de-molding. You should see the 22 plastic circles in the concrete that would need to be drilled out later.
 
 Alternate applying some pressure on the concrete with 4 M5 bolts and dropping the mold upside-down on wooden blocks - https://youtu.be/lnFw8G95LGo?si=SQofnwwmO9b61xAE&t=192
+
+## Castings post-processing
+
+Once head, bed and tailstock plate are fully cured and de-molded, it's time to clean them up, create reference surfaces and seal the parts. Tools:
+
+- Large diamond plate glued to a flat water-resistant board. Hold the board down to the table with clamps for processing head and tailstock plate (bed is too heavy to swing like that).
+- Long aluminum construction level with good reference surface for rough flatness measurements over long distances
+- 300mm straight edge from AliExpress for precision measurements on shorter distances
+- Feeler gauge to insert under the level/edge to estimate the unwanted lows
+- 9mm reamer drill bit
+- Sprayer bottle with water
+- Lots of paper towels
+
+**Safety:** always wear latex gloves and safety glasses when working with epoxy or unsealed concrete, especially when wet-sanding.
+
+### Cleanup
+
+Clamp plate board to the table, flatten all surfaces of head and tailstock. Chamfer all the edges to reduce the chance of breakouts. Use a small file to round the edges around head bearings.
+
+Clean up bed from all sides with the diamond plate and an angle grinder on the bottom if necessary, chamfer the edges a bit. Getting a smaller [diamond sharpening plate on plastic backing](https://de.aliexpress.com/item/1005007177296408.html) that fits in the bed channel is nice but same effect can probably be achieved with regular sandpaper.
+
+### Bed flattening
+
+Use construction level to estimate where material needs to be removed from the bed top surface. Focus on those areas by spraying some water, removing high points with circular movements of the diamond plate. Monitor flatness in the following directions:
+
+- Left to right flatness on each of the 2 rail beds
+- Parallelness of the 2 rail beds to each other
+- Lack of diagonal twist
+
+Spending an hour more on this stage will save you a lot of trouble when aligning the rails later.
+
+### First sealing coat
+
+Apply a thin layer of epoxy on all concrete parts. Use a small brush to prevent epoxy from leaking into the holes. Wipe off all parts with paper towels immediately after applying epoxy to prevent changes to part dimensions.
+
+## Bed rails install
+
+Install the first bed rail, use straight edge to control flatness horizontally and vertically. Add strips of kitchen foil to correct low spots.
+
+Install the second bed rail, use a dial indicator riding on the first rail to ensure it's parallel to the first rail in both planes.
+
+## Bearings install
+
+The easiest and safest option for bearing installation should be placing them in the freezer for a few hours and then sliding them in place. Prepare 2 surfaces with 12mm holes and an M12 threaded rod to push them in place if they get stuck before reading the final position.
+
+## Spindle install
+
+Check if your front or read bearing seats are too loose on the spindle. It's often the case for the rear bearing seat.
+
+Degrease spindle around the rear bearing seat. Cool down the spindle in the freezer. Slowly and uniformly warm up the head with bearings to 50 degrees e.g. by sticking a heat gun through the head. Avoid high temperatures or open flame that could damage the bearing seals.
+
+If rear bearing seat is too loose, generously apply thread lock on the rear bearing inner race. Wipe outside of the spindle from excess moisture, insert cold spindle into the head, use rubber mallet if needed.
+
+Don't panic if it gets stuck half-way, you can pull it the rest of the way with an M12 threaded rod even when the temperatures equalize.
