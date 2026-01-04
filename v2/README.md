@@ -37,7 +37,7 @@ It is a hard, long and expensive project to complete. The end result can surpass
 - 3D printing enthusiasts looking to expand their machine park
 - Craftsmen with specific requirements unmet by the commercially available lathes
 
-People who's needs might not be met by this project:
+People whose needs might not be met by this project:
 
 - Need a good lathe quickly to get actual work done
 - Need to feel the pressure feedback on the handwheels
@@ -81,7 +81,7 @@ Not counting motors, controller, concrete or rebar.
 
 ### Tailstock 165 EUR
 
-- [MT2 tailstock 100m, Type B](https://www.aliexpress.com/item/1005007709575532.html) - 98 EUR
+- [MT2 tailstock 100mm, Type B](https://www.aliexpress.com/item/1005007709575532.html) - 98 EUR
 - [4x HGH20CA](https://www.aliexpress.com/item/1005005705301031.html) - 47 EUR
 - [30mm T-track 40cm](https://www.aliexpress.com/item/1005006225385865.html) - 14 EUR
 - [T-track 2pcs T Screw Handle](https://www.aliexpress.com/item/1005006225385865.html) - 6 EUR
@@ -108,9 +108,9 @@ Motors, wiring and operation: https://youtu.be/Vne_7rnhub0
 
 Standard 2-component epoxy is used to glue the bed molds together, seal concrete parts and glue aligned head to the bed.
 
-Always lightly sand and clean the parts with isopropanol before epoxying. Remove excess wet expoxy with paper towels, excess dry epoxy with a woodworking chisel. If the glued gaps are large, wait 30m for epoxy to increase viscosity before use.
+Always lightly sand and clean the parts with isopropanol before epoxying. Remove excess wet epoxy with paper towels, excess dry epoxy with a woodworking chisel. If the glued gaps are large, wait 30m for epoxy to increase viscosity before use.
 
-Always wear gloves, glasses and other protective equipment when working with epoxy, it's very allergic.
+Always wear gloves, glasses and other protective equipment when working with epoxy. Epoxy is a strong allergen.
 
 ## 3D printing preparation
 
@@ -155,7 +155,7 @@ Print 38x [Head-DepthSpacer5.step](step/Head-DepthSpacer5.step) for later use.
 
 Before gluing the mold, make sure that the rail holes in the mold match ones on your HGR20 rails. If mold holes are too close together, print thin shims to compensate.
 
-When gluing the mold together, it's not necessary to squeese it tight, connectors should hold it. Instead focus on gluing it straight to reduce post-processing.
+When gluing the mold together, it's not necessary to squeeze it tight, connectors should hold it. Instead focus on gluing it straight to reduce post-processing.
 
 ### Head
 
@@ -241,7 +241,7 @@ Having tried and being disappointed by some of the consumer-graded mixes on Amaz
 
 Standard concrete mixes shrink when cured - outside dimensions get smaller, inside holes get larger. Headstock bearings are easy to remove from shrinking mixes but they also don't hold much on friction and require some countermeasures.
 
-There are special expanding concrete mixes that slightly increase in side as they cure. Headstock bearings are hard to remove but they also hold very well just on friction.
+There are special expanding concrete mixes that slightly increase in size as they cure. Headstock bearings are hard to remove but they also hold very well just on friction.
 
 [SikaGrout-234 high-performance vibration-resistant expanding grout](https://tun.sika.com/dms/getdocument.get/a8b219c4-161c-44d6-b310-b7932fb5eb68/sikagrout-234.pdf) is what I used in my build. It produces 12.5L of product and can be supplemented with 2.5L of e.g. washed basalt gravel under 8mm. Use precisely the specified amount of water.
 
@@ -249,7 +249,7 @@ There are special expanding concrete mixes that slightly increase in side as the
 
 I didn't use any reinforcement - basalt fibers make the mix hard to compact and I forgot about steel rebar.
 
-Ideally there would be reinforcement embedded into the mix and additonally a space for two M12 rods to insert into the base after curing for post-tensioning.
+Ideally there would be reinforcement embedded into the mix and additionally a space for two M12 rods to insert into the base after curing for post-tensioning.
 
 ### Compaction
 
@@ -261,7 +261,7 @@ Concrete is very heavy and you might end up with a bent bed if the bed mold is f
 
 ### Embedding bed feet into the concrete
 
-It might seem like you can just place the rubber feet into the wet concrete with M8 threded inserts attached but they will start sinking at an angle. It would be beneficial to have each pair of feet attached to a thin flat platform when curing.
+It might seem like you can just place the rubber feet into the wet concrete with M8 threaded inserts attached but they will start sinking at an angle. It would be beneficial to have each pair of feet attached to a thin flat platform when curing.
 
 ### Safety
 
@@ -281,7 +281,7 @@ Double check that you removed all M5 bolts before de-molding. Even a single rema
 
 If you have excess concrete on the headstock legs protruding from the mold, it might be easier to trim this before removing the mold since the mold provides easy guidance on how material still needs to be removed.
 
-Use a diamong grinding disc from AliExpress (8 euro) and an angle grinder. Removing significant amount of concrete by hand with a diamond plate would be exhausting.
+Use a diamond grinding disc from AliExpress (8 euro) and an angle grinder. Removing significant amount of concrete by hand with a diamond plate would be exhausting.
 
 Depending on the concrete you used, it might be possible to remove the bearings using an M12 threaded rod and some spacers. I had to resort to the hydraulic press because I used expanding concrete and the inner spindle 3D prints crumbled due to insufficient infill.
 
@@ -322,7 +322,7 @@ Clean up bed from all sides with the diamond plate and an angle grinder on the b
 Use construction level to estimate where material needs to be removed from the bed top surface. Focus on those areas by spraying some water, removing high points with circular movements of the diamond plate. Monitor flatness in the following directions:
 
 - Left to right flatness on each of the 2 rail beds
-- Parallelness of the 2 rail beds to each other
+- Parallelism of the 2 rail beds to each other
 - Lack of diagonal twist
 
 Spending an hour more on this stage will save you a lot of trouble when aligning the rails later.
@@ -347,7 +347,7 @@ The easiest and safest option for bearing installation should be placing them in
 
 ## Spindle install
 
-Check if your front or read bearing seats are too loose on the spindle. It's often the case for the rear bearing seat.
+Check if your front or rear bearing seats are too loose on the spindle. It's often the case for the rear bearing seat.
 
 Degrease spindle around the rear bearing seat. Cool down the spindle in the freezer. Slowly and uniformly warm up the head with bearings to 50 degrees e.g. by sticking a heat gun through the head. Avoid high temperatures or open flame that could damage the bearing seals.
 
@@ -370,13 +370,13 @@ Clamp a 500mm long 16mm diameter precision polished round rod in the chuck. It d
 Use a dial indicator riding on the linear rail carriage.
 
 1. Mark a point on the rod near the chuck and another one at the far end of the rod
-2. Measure reading L1 (e.g. 0.00mm) on the left point with the indicator located horizontally, touching in the middle of the round tod. Turn the chuck 180 degrees, measure L2 (e.g. 0.02mm). Calculate average `(L1 + L2) / 2 = 0.01mm = L`
+2. Measure reading L1 (e.g. 0.00mm) on the left point with the indicator located horizontally, touching in the middle of the round rod. Turn the chuck 180 degrees, measure L2 (e.g. 0.02mm). Calculate average `(L1 + L2) / 2 = 0.01mm = L`
 3. Do the same for the point on the right end of the rod (R1 + R2), let's say the average there is `(R1 + R2) / 2 = 0.22mm` - let's call it `R`
 4. If `R > L` use soft hammer to turn the head left a tiny bit
 5. If `R < L` use soft hammer to turn the head right a tiny bit
 6. If `R = L` we're done with horizontal alignment
 
-Repeat the same process to measure vertical alignment by placing indicator vertically. To adjust the vertical angle of the spindle remove head from the lathe and do several passes on the diamond place so that only the front or rear half of the head bottom surface is affected. Afterwards do a flattening pass touching entire bottom surface of the head to flatten the surface so that pressure would be evenly distributed.
+Repeat the same process to measure vertical alignment by placing indicator vertically. To adjust the vertical angle of the spindle remove head from the lathe and do several passes on the diamond plate so that only the front or rear half of the head bottom surface is affected. Afterwards do a flattening pass touching entire bottom surface of the head to flatten the surface so that pressure would be evenly distributed.
 
 https://www.youtube.com/shorts/qF5VYP3mdXE
 
