@@ -2,7 +2,7 @@ This software and instructions are [provided as is](../LICENSE), without warrant
 
 # Modulathe V2
 
-**NOTE: this version is still a work in progress, below is the provisinal documentation.**
+![DSC03439](https://github.com/user-attachments/assets/7395a7e6-2c01-47b0-89ce-358b5b18a9e8)
 
 Free and open-source metal lathe design where we print the forms using a 3D printer, fill them with concrete or other suitable mix, post-process the parts with sanding and assemble a CNC-ready lathe together using off-the-shelf parts and a few custom CNCed pieces.
 
@@ -327,6 +327,10 @@ Use construction level to estimate where material needs to be removed from the b
 
 Spending an hour more on this stage will save you a lot of trouble when aligning the rails later.
 
+### Spindle stop
+
+Use 9mm reamer bit to clear the spindle stop hole from both sides so that the 9mm polished stop rod can be fully inserted by hand without it getting stuck or moving freely. This is much more convenient to do before installing the spindle.
+
 ### First sealing coat
 
 Apply a thin layer of epoxy on all concrete parts. Use a small brush to prevent epoxy from leaking into the holes. Wipe off all parts with paper towels immediately after applying epoxy to prevent changes to part dimensions.
@@ -350,3 +354,38 @@ Degrease spindle around the rear bearing seat. Cool down the spindle in the free
 If rear bearing seat is too loose, generously apply thread lock on the rear bearing inner race. Wipe outside of the spindle from excess moisture, insert cold spindle into the head, use rubber mallet if needed.
 
 Don't panic if it gets stuck half-way, you can pull it the rest of the way with an M12 threaded rod even when the temperatures equalize.
+
+## Chuck install
+
+Use depressions in the front of the headstock to fasten the 125mm self-centering chuck to the spindle, use stop hole with a long bit to tighten the chuck bolts.
+
+## Head centerline alignment
+
+Place bed and head on the side next to each other, use 4 M12 threaded rods with washers and nuts to attach the head, tighten nuts lightly. Turn the lathe bottom-down.
+
+Clamp a 500mm long 16mm diameter precision polished round rod in the chuck. It doesn't have to be perfectly straight but it helps to get it as straight as possible. Avoid rods that were cut with hydraulic scissors. Rod has to have a precise diameter.
+
+![centerline1](https://github.com/user-attachments/assets/5c346430-2f51-4893-8c84-00f130b91a93)
+
+Use a dial indicator riding on the linear rail carriage.
+
+1. Mark a point on the rod near the chuck and another one at the far end of the rod
+2. Measure reading L1 (e.g. 0.00mm) on the left point with the indicator located horizontally, touching in the middle of the round tod. Turn the chuck 180 degrees, measure L2 (e.g. 0.02mm). Calculate average `(L1 + L2) / 2 = 0.01mm = L`
+3. Do the same for the point on the right end of the rod (R1 + R2), let's say the average there is `(R1 + R2) / 2 = 0.22mm` - let's call it `R`
+4. If `R > L` use soft hammer to turn the head left a tiny bit
+5. If `R < L` use soft hammer to turn the head right a tiny bit
+6. If `R = L` we're done with horizontal alignment
+
+Repeat the same process to measure vertical alignment by placing indicator vertically. To adjust the vertical angle of the spindle remove head from the lathe and do several passes on the diamond place so that only the front or rear half of the head bottom surface is affected. Afterwards do a flattening pass touching entire bottom surface of the head to flatten the surface so that pressure would be evenly distributed.
+
+https://www.youtube.com/shorts/qF5VYP3mdXE
+
+This process is very time consuming, to reduce the number of head vertical alignment iterations count how many passes on the front/rear half of the head bottom surface you did and then see how it affected `R - L`.
+
+Micro-adjustment of head vertical alignment can be done by increasing/reducing tension on some of the 4 headstock bolts.
+
+## Second sealing coat
+
+Once head is aligned we need to take it off one final time and glue it to the bed while performing a final coat of epoxy on all concrete parts. No need to take off the rails since we should already have 1 coat of epoxy underneath.
+
+Make sure to horizontally align the head one final time before epoxy sets.
