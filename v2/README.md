@@ -51,7 +51,7 @@ FreeCAD models that can be used to modify certain parts: https://github.com/kach
 
 ## Bill of materials
 
-- 910 EUR in large items detailed below
+- 942 EUR in large items detailed below
 - 290 EUR for CNC middle plate, top plate, tool holder cube
 - 110 EUR for the aluminum CNC tailstock plate (optional)
 
@@ -86,7 +86,7 @@ Not counting motors, controller, concrete or rebar.
 - [30mm T-track 40cm](https://www.aliexpress.com/item/1005006225385865.html) - 14 EUR
 - [T-track 2pcs T Screw Handle](https://www.aliexpress.com/item/1005006225385865.html) - 6 EUR
 
-### Other 194 EUR
+### Other 226 EUR
 
 - [10kg of PETG](https://www.ebay.de/itm/354057573174?var=624933263556) - 108 EUR
 - [2 packs of M5 inserts 10mm length, outside diameter 7mm, 100Pcs](https://www.aliexpress.com/item/1005006798286851.html) - 15 EUR
@@ -94,6 +94,8 @@ Not counting motors, controller, concrete or rebar.
 - [Large 120 grit diamond plate](https://www.aliexpress.com/item/1005007177296408.html) - 10 EUR
 - [Wet sandpaper 5pcs, 230x280mm, 240 grit](https://www.aliexpress.com/item/1005005510517824.html) - 6 EUR
 - [4x rubber feet 38xM8x15mm](https://www.aliexpress.com/item/1005006179757754.html) - 7 EUR
+- [M10 grub screws 100pcs](https://www.reidl.de/din-913-gewindestifte-m10x12-mit-innensechskant-kegelkuppe-45-h-galv-verzinkt-farblos-p148257) - 27 EUR
+- M5 grub screws 10pcs, usually come as a set of various grub screws - 5 EUR
 - [Straight edge 300mm](https://www.aliexpress.com/item/4000846597491.html) - 34 EUR
 - [Feeler gauge](https://www.aliexpress.com/item/1005007758368050.html) - 3 EUR
 - [Bees wax](https://www.amazon.de/-/en/dp/B09QPRQ531) - 9 EUR
