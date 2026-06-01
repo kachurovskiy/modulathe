@@ -1,5 +1,7 @@
 This software and instructions are [provided as is](LICENSE), without warranty of any kind. [Lathes are dangerous.](https://www.worksafe.vic.gov.au/safe-use-metal-turning-lathes)
 
+**Design lathe parts in the browser with [LatheCode](https://kachurovskiy.com/lathecode/):** start from sample shapes, dimensions, drawings, saved profiles, or STL meshes; preview the result in 2D/3D; then export STL or G-code for machining. It fits naturally with NanoELS and Modulathe workflows: design the turned profile, inspect the generated toolpath, and run or save G-code for your controller, with drafts and settings kept locally in your browser.
+
 # modulathe
 
 Modular digital open-source DIY desktop lathe for processing metal, wooden and plastic parts.
